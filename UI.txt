@@ -113,14 +113,14 @@
 		global_name			=	"名稱:"
 		global_type			=	"類型:"
 		global_add			=	"添加"
-		global_calibrate		=	"cal"
+		global_calibrate		=	"校準"
 		global_calibrate		=	"需要校準"
 		global_import			=	"導入"
 		global_test			=	"測試"
 		global_edit			=	"編輯"
 		global_info			=	"信息"
-		global_negative			=	"負面"
-		global_positive			=	"正面"
+		global_negative			=	"不存在"
+		global_positive			=	"存在"
 		global_paste			=	"貼上"
 		global_snip			=	"截圖"
 		global_show			=	"顯示"
@@ -827,7 +827,7 @@
 ;#####################################################
 
 ;## these strings are displayed/required in the "act-decoder" section of the settings menu
-		m_anoints_enable		=	"啟用附魔查找器"
+		m_anoints_enable		=	"啟用塗油查找器"
 
 
 
@@ -907,7 +907,7 @@
 		m_hotkeys_settings		=	"游戏内按键绑定设置:"
 		m_hotkeys_descriptions		=	"<显示高级物品描述>;不绑定到alt键"		;## in-game setting, usually on ALT
 		m_hotkeys_descriptions		=	"绑定到:"
-		m_hotkeys_ckey			=	"ctrl键用于其他功能;而不是<角色屏幕>"		;## in-game setting, on C by default
+		m_hotkeys_ckey			=	"C键用于其他功能;而不是<角色屏幕>"		;## in-game setting, on C by default
 		m_hotkeys_movekey		=	"移动键:"								;## i.e. the key used to move the character, default l-mouse
 		m_hotkeys_omnikey		=	"全能键设置:"
 		m_hotkeys_omnikey		=	"替换鼠标中键为:"
@@ -919,7 +919,7 @@
 		m_hotkeys_error			=	"无效的按键"
 		m_hotkeys_error			=	"检测到重复的按键绑定"
 		m_hotkeys_error			=	"alt键被重新绑定, 但未设置替代键"			;## if certain tickboxes are ticked, the user has to provide an alternative hotkey
-		m_hotkeys_error			=	"ctrl键被重新绑定, 但未设置omni-key 2"			;## and these messages will appear if they have not provided that
+		m_hotkeys_error			=	"C键被重新绑定, 但未设置omni-key 2"			;## and these messages will appear if they have not provided that
 
 
 

@@ -113,7 +113,7 @@
       "这意味着您可以在按住 <tab> 时拥有单独的设置"
     ],
     "anoints enable": [
-      "提供了一个快速访问界面，用于查找和过滤您当前拥有的材料可以制作哪些圣物/灌注配方",
+      "提供了一个快速访问界面，用于查找和过滤您当前拥有的材料可以制作哪些塗油配方",
       "需要正确设置 <inventory> 像素检查，在设置菜单的 <screen-checks> 部分(/highlight)",
       "将鼠标悬停在材料上并按住 <alt> 打开界面",
       "如果您只想访问游戏中的高级工具提示，请在按住 <alt> 之前按住 <ctrl>"
@@ -235,109 +235,110 @@
       "visualizes how your in-/outflow developed over the course of a specific day and the past week"
     ],
     "hotkeys ingame-keybinds": [
-      "to avoid conflicts between custom in-game keybinds and the script's hotkeys:\n- tick anything that applies to you\n- provide alternative keys when asked to"
+      "在游戏内按键绑定和脚本热键之间避免冲突\n- 勾选适用于您的任何内容\n- 当被要求时提供替代键"
     ],
     "hotkeys movekey": [
-      "only required when using cursor-movement, not wasd(/highlight)",
-      "specifying the key allows the script to adapt its behavior in certain situations",
-      "example: not activating on-hover overlays while moving the character",
-      "for special keys, check the links above to find proper names and formatting"
+      "只有当使用鼠标移动时才需要",
+      "指定键允许脚本在某些情况下适应其行为",
+      "示例: 在移动角色时不激活悬停覆盖层",
+      "对于特殊键，请检查上面的链接以找到适当的名称和格式"
     ],
     "hotkeys omnikey-info": [
-      "context-sensitive hotkey that activates the majority of the script's features",
-      "instead of specifying hotkeys for every feature, you calibrate screen-checks to help this hotkey interpret which feature has to be activated when pressed",
-      "it does not block game actions bound to it"
+      "上下文敏感热键，激活脚本的大部分功能",
+      "而不是为每个功能指定热键，您校准屏幕检查以帮助此热键解释在按下时哪个功能必须激活",
+      "它不会阻止绑定到它的游戏动作"
+
     ],
     "hotkeys omnikey": [
-      "if you want to move the <omni-key> to a different key, specify it in the edit-field",
-      "since the hotkey is used a lot, i highly recommend avoiding key combinations",
-      "don't bind it to modifier-keys or keys used for chatting, otherwise features might randomly activate",
-      "for special keys, check the links above to find proper names and formatting"
+      "如果您想将 <omni-key> 移动到不同的键，请在编辑字段中指定它",
+      "由于热键使用频繁，我强烈建议避免按键组合",
+      "不要将其绑定到修饰键或用于聊天的键，否则功能可能会随机激活",
+      "对于特殊键，请检查上面的链接以找到适当的名称和格式"
     ],
     "hotkeys omnikey2": [
-      "due to a game bug, having the c-key rebound in game requires a secondary <omni-key> for items",
-      "whenever a feature requires you to omni-click an item, you will have to use this secondary one",
-      "for special keys, check the links above to find proper names and formatting"
+      "由于一个游戏漏洞（Bug），直接改动 C 键会导致功能异常。因此，你需要将物品的使用/交互指定到一个新增的万能键上",
+      "每当一个功能需要您 omni-点击 一个物品时，您必须使用这个万能键",
+      "对于特殊键，请检查上面的链接以找到适当的名称和格式"
     ],
     "hotkeys omniblock": [
-      "while the game-client or script is focused, the keypress will only be registered by the script and not the rest of the system",
-      "only script features will be activated by the keypress, and special keys (e.g. windows or accent keys, capslock, etc.) can be used without their usual side effects"
+      "当游戏客户端或脚本处于焦点时，按键只会被脚本注册，而不会被系统其他部分注册",
+      "只有脚本功能会通过按键激活，特殊键(如 Windows 或 accent 键、capslock 等)可以正常使用，不会产生通常的副作用"
     ],
     "hotkeys altkey": [
-      "specify the alternative key in the edit field",
-      "for special keys, check the links above to find proper names and formatting"
+      "在编辑字段中指定替代键",
+      "对于特殊键，请检查上面的链接以找到适当的名称和格式"
     ],
     "hotkeys tab": [
-      "this hotkey (re)activates certain widgets and non-permanent overlays",
-      "if something is bound to <tab> in game and requires it to be held down (e.g. skills, movement), you'll have to specify an alternative key in the edit field",
-      "tooltips will refer to it as <tab>, even when rebound"
+      "这个热键(重新)激活某些小部件和非永久性覆盖层",
+      "如果游戏中的某些内容绑定到 <tab> 并需要按住(例如技能、移动)，您必须在编辑字段中指定替代键",
+      "工具提示将把它称为 <tab>，即使重新绑定"
     ],
     "hotkeys restart": [
-      "if the script crashes and stops responding, use this combination to restart it"
+      "如果脚本崩溃并停止响应，请使用此组合重新启动它"
     ],
     "iteminfo enable": [
-      "provides a customizable item tooltip which adds glance value to loot you pick up",
-      "hold the <omni-key> while hovering over items to activate it: if already active, simple omni-clicks will activate/refresh it again",
-      "click into the game or press <esc> to close it",
-      "requires the <inventory> screen-check to be set up correctly(/highlight)"
+      "提供了一个可定制的物品工具提示，为您拾取的战利品添加了查看价值",
+      "悬停时按住 <omni-key> 激活它: 如果已经激活，简单的 omni-点击将再次激活/刷新它",
+      "点击进入游戏或按 <esc> 关闭它",
+      "需要正确设置 <inventory> 像素检查(/highlight)"
     ],
     "iteminfo profiles": [
-      "customized highlighting can be saved in individual profiles",
-      "if the tooltip is on screen when selecting a profile, the changes will be applied on the fly"
+      "自定义高亮可以保存在单独的配置文件中",
+      "如果工具提示在选择配置文件时在屏幕上，更改将立即应用"
     ],
     "iteminfo reset": [
-      "long-click one of the buttons to reset specific highlighting in the currently-selected profile"
+      "长按一个按钮重置当前配置文件中的特定高亮"
     ],
     "iteminfo <omni-key>": [
-      "hold the <omni-key> while hovering over items to activate the tooltip: if already active, simple omni-clicks will activate/refresh it again",
-      "click into the game or press <esc> to close it"
+      "悬停时按住 <omni-key> 激活工具提示: 如果已经激活，简单的 omni-点击将再次激活/刷新它",
+      "点击进入游戏或按 <esc> 关闭它"
     ],
     "iteminfo alt-key": [
-      "hold <alt> while hovering over items to activate the tooltip: the tooltip will close automatically once you release <alt>",
-      "if you only want to access the in-game advanced tooltip, hold <ctrl> prior to holding <alt>",
-      "this setting might interfere with other 3rd-party tools(/highlight)"
+      "悬停时按住 <alt> 激活工具提示: 当您释放 <alt> 时，工具提示将自动关闭",
+      "如果您只想访问游戏中的高级工具提示，请在按住 <alt> 之前按住 <ctrl>",
+      "此设置可能会干扰其他第三方工具(/highlight)"
     ],
     "iteminfo modrolls": [
-      "hide the min/max range on explicit mods",
-      "+89 to maximum life\nvs.\n+89(80-89) to maximum Life"
+      "隐藏显式 mod 的 min/max 范围",
+      "+89 到最大生命值\nvs.\n+89(80-89) 到最大生命值"
     ],
     "iteminfo modbars tier": [
-      "roll-ranges in mod-texts and on bars will represent the roll within the current tier, i.e. the divine orb range",
-      "example, t2 movement speed:\n30% inc. movement speed"
+      "mod-文本和条形图上的 roll-范围将代表当前 tier 内的 roll，即神殿宝珠范围",
+      "示例，t2 移动速度:\n30% 增加移动速度"
     ],
     "iteminfo modbars global": [
-      "roll-ranges in mod-texts and on bars will represent the roll on a global scale, i.e. from worst to best possible roll",
-      "example, t2 movement speed:\n30%(10-35) inc. movement speed"
+      "mod-文本和条形图上的 roll-范围将代表全局范围内的 roll，即从最差到最好可能的 roll",
+      "示例，t2 移动速度:\n30%(10-35) 增加移动速度"
     ],
     "iteminfo modbars ilevel": [
-      "roll-ranges in mod-texts and on bars will represent the roll on an ilvl scale, i.e. from worst to best possible roll within the given ilvl",
-      "example, t2 movement speed on ilvl 74 boots:\n30%(10-30) inc. movement speed"
+      "mod-文本和条形图上的 roll-范围将代表 ilvl 范围内的 roll，即从最差到最好可能的 roll",
+      "示例，t2 移动速度 on ilvl 74 靴子:\n30%(10-30) 增加移动速度"
     ],
     "iteminfo quality scaling": [
-      "shows an additional line at the bottom with defense/damage values after applying quality and greater iron runes",
-      "this can be used to preview a crafted/looted item's theoretical max values"
+      "在应用品质和更大铁符文后，在底部显示额外的防御/伤害值",
+      "这可以用于预览制作/拾取物品的理论最大值"
     ],
     "iteminfo shift-click": [
-      "automatically refreshes/activates the tooltip when applying currency to items via shift-click",
-      "you have to hold <shift> first, right click currency, and then click items"
+      "通过 shift-click 应用货币到物品时，自动刷新/激活工具提示",
+      "您必须先按住 <shift>，右键点击货币，然后点击物品"
     ],
     "iteminfo league-start": [
-      "adds a section where the item's stats are compared to your current gear",
-      "this section replaces the base-stats section"
+      "添加一个部分，其中物品的统计数据与您的当前装备进行比较",
+      "这个部分取代了基础统计数据部分"
     ],
     "iteminfo affix-info icon": [
-      "the last column will show an icon for the mod-group of an affix (if available)"
+      "最后一列将显示一个 词缀 的 mod-group 的图标(如果可用)"
     ],
     "iteminfo affix-info ilvl": [
-      "the last column will show the ilvl requirement for each affix, which exposes high-tier but low-lvl mods",
-      "this option caters more to advanced users because it adds even more information"
+      "最后一列将显示每个 词缀 的 ilvl 要求，这暴露了高 tier 但低 ilvl 的 mod",
+      "这个选项更面向高级用户，因为它添加了更多信息"
     ],
     "iteminfo affix-info max tier": [
-      "the last column will show the maximum tier possible at the item's current ilvl",
-      "this can be used to check how close affixes are to the ilvl-restricted maximum tier"
+      "最后一列将显示物品当前等级的最大词缀阶级",
+      "这可以用于检查 词缀 与 物品等级 限制的最大阶级有多接近"
     ],
     "iteminfo affix-info off": [
-      "don't show any information about affixes in the last column"
+      "最后一列不显示任何关于 词缀 的信息"
     ],
     "iteminfo base-info": [
       "adds a section that shows how the item's stats compare to the best-in-class stats",
@@ -749,13 +750,13 @@
       "按住右ctrl扫描屏幕将打开一个窗口，显示屏幕截图以及脚本能够从中读取的文本"
     ],
     "ocr z hotkey": [
-      "type in the in-game hotkey for <toggle highlighting>",
-      "check the links above if it uses special keys/combinations"
+      "输入游戏内热键 <toggle highlighting> 的键名",
+      "检查上面的链接，如果它使用特殊键/组合"
     ],
     "ocr hotkey": [
-      "type in the hotkey you want to use to activate this feature",
-      "don't bind it to modifier-keys or keys used for chatting in order to prevent accidentally activating the feature",
-      "check the links above if you want to use special keys/combinations"
+      "输入您想要使用的热键来激活此功能",
+      "不要将其绑定到修饰键或用于聊天的键，以防止意外激活功能",
+      "检查上面的链接，如果您想要使用特殊键/组合"
     ],
     "sanctum enable": [
       "analyzes rooms and connections on the map and provides tools for highlighting and planning",
@@ -771,60 +772,60 @@
       "requires the <inventory> pixel-check to be set up correctly in the <screen-checks> settings(/highlight)"
     ],
     "screenchecks pixel-about": [
-      "the script continually checks the screen for certain ui elements",
-      "this enables context sensitivity and automatic overlay toggling",
-      "these checks will never result in any interaction with the client"
+      "脚本不断检查屏幕上的某些 ui 元素",
+      "这启用了上下文敏感性和自动覆盖切换",
+      "这些检查永远不会与客户端进行任何交互"
     ],
     "screenchecks pixel-calibration": [
-      "follow the instructions from <info> before clicking this",
-      "captures certain pixel-values and stores them for future checks"
+      "在点击此按钮之前，请遵循 <信息> 中的说明",
+      "捕获某些像素值并存储以供将来检查"
     ],
     "screenchecks pixel-test": [
-      "click this button while the ui element shown in <info> is visible, the test should return positive",
-      "click it again while the ui element shown in <info> is not visible, the test should return negative",
-      "geforce now: move your character around a bit, then redo steps 1 & 2"
+      "当 <信息> 中显示的 ui 元素可见时，点击此按钮，测试应返回存在",
+      "当 <信息> 中显示的 ui 元素不可见时，再次点击它，测试应返回不存在",
+      "geforce now: 移动您的角色，然后重新执行步骤 1 和 2"
     ],
     "screenchecks pixel-info": [
-      "long-click to see instructions"
+      "长按以查看说明"
     ],
     "screenchecks pixel-background": [
-      "important background process that enables context-sensitivity",
-      "in case of performance issues, disable temporarily to check if it's the cause"
+      "重要的后台进程，启用上下文敏感性",
+      "如果出现性能问题，暂时禁用以检查是否是原因"
     ],
     "screenchecks image-about": [
-      "same principle as pixel-checks (see above) but more precise",
-      "these are used to interpret which feature to activate when pressing the <omni-key> or <tab>"
+      "与像素检查（见上文）相同的原则，但更精确",
+      "这些用于解释按下 <omni-key> 或 <tab> 时激活哪个功能"
     ],
     "screenchecks image-info": [
-      "long-click to see instructions"
+      "长按以查看说明"
     ],
     "screenchecks image-calibration": [
-      "follow the instructions from <info> before clicking this",
-      "left-click: automatic calibration",
-      "right-click: manually screen-cap the ui element shown in <info>"
+      "在点击此按钮之前，请遵循 <信息> 中的说明",
+      "左键: 自动校准",
+      "右键: 手动截取 <信息> 中显示的 ui 元素"
     ],
     "screenchecks image-test": [
-      "click this button while the ui element shown in <info> is visible, the test should return positive",
-      "click it again while the ui element shown in <info> is not visible, the test should return negative",
-      "if tests keep returning negative after automatic calibration, right-click the <cal> button and snip the marked area shown in <info>"
+      "当 <信息> 中显示的 ui 元素可见时，点击此按钮，测试应返回存在",
+      "当 <信息> 中显示的 ui 元素不可见时，再次点击它，测试应返回不存在",
+      "如果测试在自动校准后继续返回负数，右键点击 <校準> 按钮并截取 <信息> 中标记的区域"
     ],
     "screenchecks folder": [
-      "opens the folder with calibration files",
-      "if tests keep failing, open the img-files to check if they represent the correct image-clip"
+      "打开包含校准文件的文件夹",
+      "如果测试继续失败，打开 img-files 以检查它们是否代表正确的图像剪辑"
     ],
     "screenchecks variance": [
-      "since streaming-clients have variable image quality, the tool may not be able to accurately check the screen for certain ui elements",
-      "if clicking <test> doesn't return consistent, repeatable results, you may have to increase the allowed variance of screen-checks",
-      "increase the value in increments of 10 and retest the checks until the results are consistent"
+      "由于流式客户端具有可变图像质量，工具可能无法准确检查屏幕上的某些 ui 元素",
+      "如果点击 <測試> 不返回一致、可重复的结果，您可能需要增加屏幕检查的允许变量",
+      "增加 10 的值并重新测试检查，直到结果一致"
     ],
     "searchstrings poe-regex": [
-      "3rd-party website for regex-strings"
+      "第三方网站以用于正则表达式字符串"
     ],
     "searchstrings about": [
       "搜索字符串分为用例，例如: gwennen, harvest, vendor",
       "当按下 <omni-key> 时，脚本检测正确的用例并显示一个列表以选择",
       "检测需要手动图像校准",
-      "一些用例(例如: 生物图鉴)不会自动隐藏顶部右角的联盟信息面板，因此您必须在按下 <omni-key> 之前打开库存"
+      "某些用例不会隐藏在右上角的联盟信息面板，因此您必须在按下<omni-key>之前打开背包"
     ],
     "searchstrings about 2": [
       "搜索字符串分为用例，例如: gem cutting, stash, vendor",
@@ -835,8 +836,8 @@
       "打开剪辑工具: 使用它剪辑一个独特的ui元素"
     ],
     "searchstrings test": [
-      "点击此按钮时，ui元素在屏幕上，测试应返回正确",
-      "点击此按钮时，ui元素不在屏幕上，测试应返回不正确",
+      "点击此按钮时，ui元素在屏幕上，测试应返回存在",
+      "点击此按钮时，ui元素不在屏幕上，测试应返回不存在",
       "结果必须一致且可重复"
     ],
     "searchstrings edit": [
@@ -853,11 +854,11 @@
     ],
     "searchstrings enable-beastcrafting": [
       "启用/禁用特定用例",
-      "this is included by default and contains strings for flask crafting"
+      "这是默认包含的，包含用于药水制作的字符串"
     ],
     "searchstrings enable-lilly": [
       "启用/禁用特定用例",
-      "this is part of the imported leveling guide and contains strings for every gem"
+      "这是导入的升级指南的一部分，包含每个宝石的字符串"
     ],
     "searchstrings add": [
       "输入一个名称，然后按 <enter>"
@@ -1493,50 +1494,50 @@
     "atlas": [
       "(/bold)(/underline)instructions:",
       "-> open the atlas",
-      "-> click <cal> to let the tool calibrate, OR right-click to manually calibrate",
-      "-> follow the instructions in <test>"
+      "-> click <校準> to let the tool calibrate, OR right-click to manually calibrate",
+      "-> follow the instructions in <測試>"
     ],
     "betrayal": [
       "(/bold)(/underline)instructions:",
       "-> open the syndicate board and make sure the x-button is fully visible",
-      "-> click <cal> to let the tool calibrate, OR right-click to manually calibrate",
-      "-> follow the instructions in <test>"
+      "-> click <校準> to let the tool calibrate, OR right-click to manually calibrate",
+      "-> follow the instructions in <測試>"
     ],
     "exchange": [
-      "(/bold)(/underline)instructions:",
-      "-> open the currency exchange",
-      "-> make sure the inventory is closed",
-      "-> click <cal>",
-      "-> follow the instructions in <test>"
+      "(/bold)(/underline)说明:",
+      "-> 打開通貨交換",
+      "-> 確保背包已關閉",
+      "-> 點擊 <校準>",
+      "-> 遵循 <測試> 中的說明"
     ],
     "gamescreen": [
-      "(/bold)(/underline)explanation:",
-      "-> this check is used to determine whether you are controlling your character or accessing a menu",
-      "(/bold)(/underline)instructions:",
-      "-> close every in-game menu: atlas, inventory, etc.",
-      "-> the minimap has to be in the center",
-      "-> the info-panel (img) has to be fully visible",
-      "-> click <cal>",
-      "-> follow the instructions in <test>"
+      "(/bold)(/underline)说明:",
+      "-> 此检查用于确定您是否控制角色或访问菜单",
+      "(/bold)(/underline)说明:",
+      "-> 关闭所有游戏菜单: 地图, 背包等.",
+      "-> 小地图必须位于中心",
+      "-> 信息面板(img)必须完全可见",
+      "-> 点击 <校準>",
+      "-> 遵循 <測試> 中的說明"
     ],
     "inventory": [
-      "(/bold)(/underline)instructions:",
-      "-> open the inventory",
-      "-> the top-right corner (img: yellow) has to be fully visible",
-      "-> click <cal>",
-      "-> follow the instructions in <test>"
+      "(/bold)(/underline)说明:",
+      "-> 打開背包",
+      "-> 右上角(img: 黃色)必須完全可見",
+      "-> 點擊 <校準>",
+      "-> 遵循 <測試> 中的說明"
     ],
     "skilltree": [
-      "(/bold)(/underline)instructions:",
-      "-> open the skilltree",
-      "-> click <cal> to let the tool calibrate, OR right-click to manually calibrate",
-      "-> follow the instructions in <test>"
+      "(/bold)(/underline)说明:",
+      "-> 打開技能樹",
+      "-> 點擊 <校準> 以讓工具校準，或右鍵手動校準",
+      "-> 遵循 <測試> 中的說明"
     ],
     "stash": [
-      "(/bold)(/underline)instructions:",
-      "-> open the stash",
-      "-> click <cal> to let the tool calibrate, OR right-click to manually calibrate",
-      "-> follow the instructions in <test>"
+      "(/bold)(/underline)说明:",
+      "-> 打開藏身處",
+      "-> 點擊 <校準> 以讓工具校準，或右鍵手動校準",
+      "-> 遵循 <測試> 中的說明"
     ]
   },
   "statlas": {
