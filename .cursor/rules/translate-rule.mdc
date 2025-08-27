@@ -1,0 +1,17 @@
+---
+description:
+globs: *.json
+alwaysApply: true
+---
+基于流放之路2(Path of Exile 2)游戏进行翻译
+在遇到areaid或者areac_为前缀，需要根据后续的id去找到对应的名字，请去"[leveltracker] areas 2.json"文件中寻找对应的名字
+
+以下是一些人物名对应的繁体中文：
+rudja: 魯賈
+risu: 芮蘇
+balbala: 芭芭拉
+jamanra： 賈嫚拉
+kabala: 卡巴拉
+azarian: 阿薩里恩
+servi: 瑟維
+alva: 艾瓦

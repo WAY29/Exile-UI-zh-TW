@@ -1,0 +1,860 @@
+[
+  [
+    [
+      "擊殺 arena:浮腫米勒",
+      "進入 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "倫利: <抵達皆伐>",
+      "進入 areaidg1_2 ;; 皆伐"
+    ],
+    [
+      "可選: 進入 areaidg1_3 擊殺 (img:checkpoint) arena:吞噬獸 以獲取 (img:skill) (img:support) ;; 泥沼陋居",
+      "(hint)__ 從 areaidg1_3 (img:portal) 出來, (img:quest_2) 倫利 || (img:waypoint) 去 areaidg1_2 ;; 皆伐",
+      "擊殺 arena:貝伊拉 以獲取 (quest:凜冬狼的頭顱)",
+      "進入 (img:checkpoint) areaidg1_4 ;; 葛瑞爾林"
+    ],
+    [
+      "找到 (img:in-out) (img:arena) areaidg1_6 打開 (img:waypoint) ;; 纏縛陰林",
+      "(hint)__ 鑽石形區域: 找到 (img:checkpoint) 或 (img:waypoint) 來確定方向",
+      "可選: 擊殺 (img:checkpoint) arena:荊棘懼怪 来获取 (img:skill) || 擊殺 (img:checkpoint) arena:女巫 来获取 (img:support) 与藥水",
+      "進入 (img:checkpoint) areaidg1_5 (通常在 arena:荊棘懼怪 附近) ;; 赤谷"
+    ],
+    [
+      "尋找並清理 (quest:3_石碑) 以獲取 (quest:3_力量符文)",
+      "(img:portal) 去 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "與 (img:quest_2) 倫利對話, 獲取 (quest:魔符尖刺)",
+      "(img:waypoint) 去 areaidg1_4 ;; 葛瑞爾林"
+    ],
+    [
+      "使用 (quest:魔符尖刺) 激活 3 (color:aaaaaa)封印符文",
+      "(img:waypoint) 去 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "與 (img:quest_2) arena:烏娜 對話",
+      "(img:waypoint) 去 areaidg1_6 ;; 纏縛陰林"
+    ],
+    [
+      "可選: 擊殺 arena:腐敗的德魯伊 以獲取 (img:support)",
+      "進入 (img:checkpoint) areaidg1_7 ;; 永恆的墓地"
+    ],
+    [
+      "可選: 靠近 (img:checkpoint) 的 (color:aaaaaa)石棺 以獲取 (img:ring)",
+      "進入 (img:checkpoint) areaidg1_9 ;; 配偶的墓室"
+    ],
+    [
+      "可選: 靠近 (img:checkpoint) (color:aaaaaa)鬧鬼的寶藏 以獲取 (img:support)",
+      "擊殺 arena:阿辛妮娅 , 進入 areaidg1_7 ;; 不朽帝國之墓"
+    ],
+    [
+      "可選: 靠近 (img:checkpoint) 的 (color:aaaaaa)石棺 以獲取 (img:ring)",
+      "進入 (img:checkpoint) areaidg1_8 ;; 政務官陵墓"
+    ],
+    [
+      "擊殺 arena:德莱文, 進入 areaidg1_7 ;; 不朽帝國之墓"
+    ],
+    [
+      "可選: 靠近 (img:checkpoint) 的 (color:aaaaaa)石棺 以獲取 (img:ring)",
+      "擊殺 (img:checkpoint) arena:拉赫兰 獲取 (quest:戒指)",
+      "進入 areaidg1_11 ;; 獵場"
+    ],
+    [
+      "沿著邊緣走，(color:ff00ff)兩個任務:",
+      "(hint)__ 擊殺 arena:鴉鈴 || (img:in-out) (img:arena) areaidg1_13_1 (img:waypoint) ;; 奧格姆農地",
+      "沿著邊緣走 到 (img:checkpoint) areaidg1_12 ;; 弗雷索恩"
+    ],
+    [
+      "清理 (quest:3_儀式)",
+      "在首領儀式擊殺 arena:迷霧之王 以獲取 (quest:寶石花顱骨)",
+      "(img:portal) 去 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "(img:waypoint) 去 areaidg1_13_1 ;; 奧格姆農地"
+    ],
+    [
+      "沿著路直走 到 (img:checkpoint) (color:aaaaaa)小屋 以獲取 (quest:鲁特琴)",
+      "(hint)__ 這個區域的路可能被阻塞, 繞著走",
+      "可選:找到並清理 (img:checkpoint) (color:aaaaaa)麥田圈 以獲取 (img:skill)",
+      "沿著路走到 (img:checkpoint) areaidg1_13_2 ;; 奧格姆村"
+    ],
+    [
+      "(img:waypoint) 去 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "烏娜: <神秘阴影> & <丢失的鲁特琴>",
+      "(img:waypoint) 去 areaidg1_13_2 ;; 奧格姆村"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:checkpoint) 尋找並進入 (color:aaaaa)大房子 以獲取 (quest:鍛造工具) 、 (quest:空白符文) 、 (img:artificer)",
+        "擊殺 處刑者, 進入 areaidg1_14 ;; 宅第壁壘"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "可選: (img:checkpoint) 尋找並進入(color:aaaaa)大房子 以獲取 (quest:空白符文) 、 (img:artificer)",
+        "擊殺 處刑者, 進入 areaidg1_14 ;; 宅第壁壘"
+      ]
+    },
+    [
+      "沿著 (img:help) 邊緣走, 進入 (img:checkpoint) areaidg1_15 ;; 奧格姆宅第",
+      "可選: 沿著對面的邊緣走 找到 (color:aaaaa)掛著的屍體 以獲取 (img:support)"
+    ],
+    [
+      "尋找並擊殺 第一層的 arena:烛火魔像 以獲取 (quest:燭光精髓)",
+      "(hint)__ 找到路口, 檢查周圍是否有 (img:checkpoint)",
+      "擊殺 arena:吉恩諾伯爵 , 進入 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "倫利: <尋找熔爐>",
+        "蕾堤絲: <腐化痕跡>",
+        "與 (img:quest_2) arena:黑衣幽魂 對話, 進入 areaidg2_1 ;; 瓦斯提里郊區"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "蕾堤絲: <腐化痕跡>",
+        "與 (img:quest_2) arena:黑衣幽魂 對話, 進入 areaidg2_1 ;; 瓦斯提里郊區"
+      ]
+    }
+  ],
+  [
+    [
+      "擊殺 撕裂者, (img:portal) 離開",
+      "進入 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:阿薩拉 對話",
+      "沙漠地圖: areaidg2_10_1 ;; 莫頓挖石場"
+    ],
+    [
+      "可選: (img:artificer) (color:aaaaaa)法里登的寶藏",
+      "沿著 (img:checkpoint) 走",
+      "進入 (img:checkpoint) areaidg2_10_2 ;; 莫頓礦坑"
+    ],
+    [
+      "擊殺 arena:魯賈 , 與 (img:quest_2) arena:芮蘇 對話",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:芮蘇 對話",
+      "沙漠地圖: areaidg2_3a ;; 哈拉妮關口"
+    ],
+    [
+      "與 (img:quest_2) arena:阿薩拉 對話",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:芮蘇 和 (img:quest_2) arena:阿薩拉 對話",
+      "沙漠地圖: areaidg2_3a ;; 哈拉妮關口",
+      "進入 areaidg2_2 ;; 叛徒之路"
+    ],
+    [
+      "尋找並擊殺 arena:芭芭拉 獲取 (quest:巨靈之幣)",
+      "(hint)__ 沿著牆走, 找到紙符文",
+      "進入 (img:checkpoint) areaidg2_3 ;; 哈拉妮關口"
+    ],
+    [
+      "沿著峽谷邊緣走, 擊殺 arena:賈嫚拉",
+      "使用 (img:arena) 樓梯, 進入深處",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:扎卡 對話",
+      "沙漠地圖: areaidg2_13 ;; 絲克瑪試煉"
+    ],
+    [
+      "激活 (img:waypoint)",
+      "(hint)__ 升華可以稍後進行",
+      "(img:waypoint) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:阿薩拉 對話",
+      "沙漠地圖: areaidg2_4_1 ;; 凱斯城"
+    ],
+    [
+      "(color:ff00ff)擊殺 (color:aaaaaa)蛇 以獲取 (quest:卡巴拉部落聖物)",
+      "擊殺 arena:卡巴拉",
+      "(hint)__ arena:卡巴拉 通常在中心位置, 有一個 (img:checkpoint)",
+      "尋找並進入 (img:checkpoint) areaidg2_4_2 ;; 失落之城"
+    ],
+    [
+      "可選: (color:aaaaaa)石棺 以獲取 (img:spirit)  || <遊蕩的甲蟲> 以獲取 (color:66b2ff)寶石",
+      "尋找並進入 (img:checkpoint) areaidg2_4_3 ;; 掩埋神殿"
+    ],
+    [
+      "可選: 在 (img:checkpoint) (color:aaaaaa)元素奉獻 中獲取 (color:66b2ff)元素抗性 (img:ring) ",
+      "進入 (img:arena) 凱斯之心, 擊殺 arena:阿薩里恩",
+      "與 (img:quest_2) arena:女神 對話, 獲取 (quest:灰燼), 點燃她",
+      "獲取 (quest:水之精髓), (img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:扎卡 對話",
+      "沙漠地圖: areaidg2_5_1 ;; 乳齒象惡地"
+    ],
+    [
+      "可選: (img:support) (color:aaaaaa)雕像",
+      "進入 (img:checkpoint) areaidg2_5_2 ;; 骨坑"
+    ],
+    [
+      "(color:ff00ff)兩個任務: 擊殺 (color:aaaaaa)鬣狗 獲取 (quest:太陽部落聖物) || 擊殺 arena:遠古之蹄．埃克巴勃 獲取 (quest:乳齒象象牙)",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:扎卡 對話",
+      "沙漠地圖: areaidg2_6 ;; 泰坦之谷"
+    ],
+    [
+      "(color:ff00ff)兩個任務: 激活 (quest:3_封印) || 將 (quest:太陽部落聖物與卡巴拉部落聖物) 放入祭壇",
+      "尋找並進入 (img:checkpoint) areaidg2_7, 通常在中間位置 ;; 泰坦石窟"
+    ],
+    [
+      "擊殺 arena:巨像．札爾瑪拉斯 獲取 (quest:火焰紅寶石)",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:扎卡 對話, 獲得 (quest:瓦斯提里的戰角)",
+      "到車頭吹響 (quest:瓦斯提里的戰角)",
+      "(img:quest_2) (color:aaaaaa)沙漠地圖: areaidg2_8 ;; 戴斯哈"
+    ],
+    [
+      "可選: (img:artificer) 在地圖側邊找到 (color:aaaaaa)骷髏",
+      "尋找 (quest:遺體) 獲取 (quest:遺書)",
+      "進入 (img:checkpoint) areaidg2_9_1 ;; 悼念之路"
+    ],
+    [
+      "進入 (img:checkpoint) areaidg2_9_2 ;; 戴斯哈尖塔"
+    ],
+    [
+      "在 靠近 (img:checkpoint) 的地方 激活 (color:aaaaaa)卡洛翰姊妹的石像",
+      "擊殺 arena:玷汙者托爾．谷爾, (img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "給 (quest:遺書) 給 arena:夏布林",
+      "與 (img:quest_2) arena:阿薩拉 對話",
+      "沙漠地圖: areaidg2_12_1 ;; 戴斯哈尖塔"
+    ],
+    [
+      "進入 (img:checkpoint) areaidg2_12_2 ;; 戴斯哈尖塔"
+    ],
+    [
+      "擊殺 arena:賈嫚拉",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "從車隊沿著左上角 (img:7) 走, 與 (img:quest_2) arena:黑衣幽魂 對話",
+      "按下 ESC: (color:aaaaaa)角色選擇&重新登入",
+      "與 (img:quest_2) arena:阿薩拉 對話, 進入 areaidg3_1 ;; 風沙沼澤"
+    ]
+  ],
+  [
+    [
+      "可選: (img:skill) arena:根淤 || (img:ring) (color:aaaaaa)掛在樹上的屍體",
+      "可選: (img:jeweller) 清理靠近出口的(img:checkpoint) (color:aaaaaa)歐洛克營地 ",
+      "進入 (img:checkpoint) areaidg3_town (img:town) ;; 高地神塔營地"
+    ],
+    [
+      "進入 areaidg3_3 ;; 叢林遺跡"
+    ],
+    [
+      "(color:ff00ff)兩個任務: 擊殺 arena:神威銀拳 || 尋找 (img:waypoint)",
+      "可選: 在 (img:checkpoint) (color:aaaaaa)叢林墓地 找到 <腰帶> ",
+      "進入 (img:checkpoint) areaidg3_2_1 ;; 感染荒地"
+    ],
+    [
+      "激活 (img:waypoint), 沿著邊緣走 (color:ff00ff)兩個任務:",
+      "(hint)__ (img:in-out) (img:arena) areaidg3_5 (img:waypoint) || (img:in-out) (img:arena) areaidg3_7 (img:waypoint) ;; 龍蜥濕地 & 阿札克泥沼",
+      "使用最後一個 (img:waypoint) 前往 areaidg3_3 ;; 叢林遺跡"
+    ],
+    [
+      "進入 areaidg3_4 ;; 劇毒墓穴"
+    ],
+    [
+      "尋找 (quest:屍體) 獲取 (quest:屍蛇毒液)",
+      "(img:portal) 去 areaidg3_town (img:town) ;; 高地神塔營地"
+    ],
+    [
+      "瑟維: <滑行死者>",
+      "(hint)__ 獎勵是永久的, 無法更改",
+      "(img:waypoint) 去 areaidg3_7 ;; 阿札克泥沼"
+    ],
+    [
+      "可選: (img:quest_2) (color:aaaaaa)點燃火炬以獲得暫時buff",
+      "(hint)__ 25% 火焰抗性 & 稀有度, 在靠近中心的位置",
+      "擊殺 arena:沼澤女巫．尹娜杜克 獲取 (quest:尹娜杜克的幽暗長鋒) 、 (quest:寶石花顱骨)",
+      "(img:portal) 去 areaidg3_town (img:town) ;; 高地神塔營地"
+    ],
+    [
+      "瑟維: <部落復仇>",
+      "(img:waypoint) 去 areaidg3_5 ;; 龍蜥濕地"
+    ],
+    [
+      "沿著邊緣走, 擊殺 arena:龍蜥．欽路錫安 以獲取 (quest:最後通牒)",
+      "(hint)__ 如果你找到 (img:arena) areaidg3_10_airlock, (img:checkpoint) 返回 ;; 混沌神殿",
+      "(hint)__ 從起點開始, 沿著相反的邊緣走",
+      "enter areaidg3_6_1 ;; 吉卡尼的機械迷城"
+    ],
+    [
+      "激活 (img:waypoint)",
+      "(img:waypoint) 去 areaidg3_5 ;; 龍蜥濕地"
+    ],
+    [
+      "尋找並進入 (img:checkpoint) areaidg3_10_airlock ;; 混沌神殿",
+      "(hint)__ 如果你之前找到過它, (img:checkpoint) 傳送過去",
+      "(hint)__ 否則, 沿著相反的邊緣走"
+    ],
+    [
+      "激活 (img:waypoint)",
+      "(hint)__ 你可以現在進行, 也可以稍後再來",
+      "(img:waypoint) 去 areaidg3_6_1 ;; 吉卡尼的機械迷城"
+    ],
+    [
+      "尋找 (quest:2_小型靈魂核心) 來打開 arena:遺忘的黑顎 & 出口",
+      "(hint)__ 在 (img:checkpoint) 擊殺 arena:遺忘的黑顎 後, 沿著紅色路徑走",
+      "沿著紅色路徑走到 (img:checkpoint) areaidg3_6_2 ;; 吉卡尼的聖域"
+    ],
+    [
+      "尋找 (quest:2_中型靈魂核心) 來打開 (quest:發電機)",
+      "(hint)__ (img:checkpoint) 選擇一側, 找到 (quest:核心) || 激活 (quest:發電機) || (img:checkpoint)",
+      "按下 ESC: (color:aaaaaa)重生 || 在 (img:quest_2) 附近激活 (quest:大型靈魂核心)",
+      "擊殺 arena:核心守衛．茲科亞特 獲取 (quest:大型靈魂核心)",
+      "(img:waypoint) 去 areaidg3_2_1 ;; 感染荒地"
+    ],
+    [
+      "在附近插入 (quest:大型靈魂核心)",
+      "進入 areaidg3_2_2 ;; 馬特蘭水道"
+    ],
+    [
+      "找到並激活 (color:aaaaaa)大型運河槓桿",
+      "在過場動畫後, (img:portal) 去 areaidg3_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "沿著 (img:3) 樓梯, 與 (img:quest_2) arena:艾瓦 對話",
+      "進入 areaidg3_8 ;; 淹沒之城"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:in-out) (img:arena) areaidg3_9  (img:waypoint) ;; 熔岩寶庫",
+        "進入 (img:checkpoint) areaidg3_11 ;; 污垢頂峰"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "可選: (img:artificer)擊殺 (img:checkpoint) areaidg3_9 的 arene:梅克圖 ;; 熔岩寶庫",
+        "(hint)__ 然後 (img:portal), (img:quest_2) arena:奧斯瓦德 || (img:waypoint) 去 areaidg3_8 ;; 淹沒之城",
+        "進入 (img:checkpoint) areaidg3_11 ;; 污垢頂峰"
+      ]
+    },
+    [
+      "可選: 找到 (img:checkpoint) (color:aaaaaa)大鍋 以獲取 藥水",
+      "(hint)__ 需要先在區域內擊殺怪物獲取 (quest:3_不同顏色的蘑菇)",
+      "擊殺 arena:污垢女王 獲取 (quest:神殿大門神像)",
+      "(img:portal) 去 areaidg3_town (img:town) ;; 皆伐營地"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(quest:重鑄台) (img:artificer) (也可以稍後再來)",
+        "(hint)__ (img:waypoint) 去 areaidg3_9, 擊殺 arena:梅克圖 獲取 (quest:卡瑪薩之錘) ;; 熔岩寶庫",
+        "(hint)__ (img:portal) 去 皆伐營地, 與 (img:quest_2) arena:奧斯瓦德 對話",
+        "沿著 (img:3) 樓梯, 進入 areaidg3_12 ;; 科佩克神殿"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "沿著 (img:3) 樓梯, 進入 areaidg3_12 ;; 科佩克神殿"
+      ]
+    },
+    [
+      "尋找 (img:arena) 在角落的樓梯(共三層), 擊殺 arena:凱亞祖利",
+      "與 (img:quest_2) arena:艾瓦 對話, 進入 areaidg3_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "通過 崎點 進入 areaidg3_14 ;; 奧札爾"
+    ],
+    [
+      "(color:ff00ff)兩個任務: 擊殺怪物以獲取 (quest:犧牲之心) || 擊殺 arena:納帕茲",
+      "(hint)__ 在下一個區域也能得到犧牲之心",
+      "(hint)__ 如果你找到了鋪磚道路，那麼通常離 (img:checkpoint) arena:納帕茲 不遠了",
+      "尋找並進入 (img:checkpoint) areaidg3_16 ;; 阿戈拉"
+    ],
+    [
+      "擊殺怪物以獲取 (quest:犧牲之心) || 尋找 廣場 和 (img:checkpoint)",
+      "尋找 祭壇 並拿取(quest:獻祭匕首), 放置 (quest:犧牲之心)",
+      "(hint)__ 通常在 廣場 的 (img:0), 但你需要繞過 (img:6)",
+      "進入 (img:checkpoint) areaidg3_17 (通常在 (img:7) 的桌子) ;; 漆黑密室"
+    ],
+    [
+      "擊殺 arena:多里亞尼, (img:portal) 去 areaidg3_town (img:town) ;; 皆伐營地",
+      "(hint)__ 這個區域由迷宮和橋樑連接而成"
+    ],
+    [
+      "通過 崎點 進入 (img:checkpoint) areaidc_g1_1 ;; 河岸"
+    ]
+  ],
+  [
+    [
+      "擊殺 arena:浮腫米勒",
+      "進入 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "倫利: <抵達皆伐>",
+      "進入 areaidg1_2 ;; 皆伐"
+    ],
+    [
+      "可選: 進入 areaidg1_3 擊殺 (img:checkpoint) arena:吞噬獸 以獲取 (img:skill) (img:support) ;; 泥沼陋居",
+      "(hint)__ 從 areaidg1_3 (img:portal) 出來, (img:quest_2) 倫利 || (img:waypoint) 去 areaidg1_2 ;; 皆伐",
+      "擊殺 arena:貝伊拉 以獲取 (quest:凜冬狼的頭顱)",
+      "進入 (img:checkpoint) areaidg1_4 ;; 葛瑞爾林"
+    ],
+    [
+      "找到 (img:in-out) (img:arena) areaidg1_6 打開 (img:waypoint) ;; 纏縛陰林",
+      "(hint)__ 鑽石形區域: 找到 (img:checkpoint) 或 (img:waypoint) 來確定方向",
+      "可選: 擊殺 (img:checkpoint) arena:荊棘懼怪 来获取 (img:skill) || 擊殺 (img:checkpoint) arena:女巫 来获取 (img:support) 与藥水",
+      "進入 (img:checkpoint) areaidg1_5 (通常在 arena:荊棘懼怪 附近) ;; 赤谷"
+    ],
+    [
+      "尋找並清理 (quest:3_石碑) 以獲取 (quest:3_力量符文)",
+      "(img:portal) 去 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "與 (img:quest_2) 倫利對話, 獲取 (quest:魔符尖刺)",
+      "(img:waypoint) 去 areaidg1_4 ;; 葛瑞爾林"
+    ],
+    [
+      "使用 (quest:魔符尖刺) 激活 3 (color:aaaaaa)封印符文",
+      "(img:waypoint) 去 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "與 (img:quest_2) arena:烏娜 對話",
+      "(img:waypoint) 去 areaidg1_6 ;; 纏縛陰林"
+    ],
+    [
+      "可選: 擊殺 arena:腐敗的德魯伊 以獲取 (img:support)",
+      "進入 (img:checkpoint) areaidg1_7 ;; 永恆的墓地"
+    ],
+    [
+      "可選: 靠近 (img:checkpoint) 的 (color:aaaaaa)石棺 以獲取 (img:ring)",
+      "進入 (img:checkpoint) areaidg1_9 ;; 配偶的墓室"
+    ],
+    [
+      "可選: 靠近 (img:checkpoint) (color:aaaaaa)鬧鬼的寶藏 以獲取 (img:support)",
+      "擊殺 arena:阿辛妮娅 , 進入 areaidg1_7 ;; 不朽帝國之墓"
+    ],
+    [
+      "可選: 靠近 (img:checkpoint) 的 (color:aaaaaa)石棺 以獲取 (img:ring)",
+      "進入 (img:checkpoint) areaidg1_8 ;; 政務官陵墓"
+    ],
+    [
+      "擊殺 arena:德莱文, 進入 areaidg1_7 ;; 不朽帝國之墓"
+    ],
+    [
+      "可選: 靠近 (img:checkpoint) 的 (color:aaaaaa)石棺 以獲取 (img:ring)",
+      "擊殺 (img:checkpoint) arena:拉赫兰 獲取 (quest:戒指)",
+      "進入 areaidg1_11 ;; 獵場"
+    ],
+    [
+      "沿著邊緣走，(color:ff00ff)兩個任務:",
+      "(hint)__ 擊殺 arena:鴉鈴 || (img:in-out) (img:arena) areaidg1_13_1 (img:waypoint) ;; 奧格姆農地",
+      "沿著邊緣走 到 (img:checkpoint) areaidg1_12 ;; 弗雷索恩"
+    ],
+    [
+      "清理 (quest:3_儀式)",
+      "在首領儀式擊殺 arena:迷霧之王 以獲取 (quest:寶石花顱骨)",
+      "(img:portal) 去 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "(img:waypoint) 去 areaidg1_13_1 ;; 奧格姆農地"
+    ],
+    [
+      "沿著路直走 到 (img:checkpoint) (color:aaaaaa)小屋 以獲取 (quest:鲁特琴)",
+      "(hint)__ 這個區域的路可能被阻塞, 繞著走",
+      "可選:找到並清理 (img:checkpoint) (color:aaaaaa)麥田圈 以獲取 (img:skill)",
+      "沿著路走到 (img:checkpoint) areaidg1_13_2 ;; 奧格姆村"
+    ],
+    [
+      "(img:waypoint) 去 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "烏娜: <神秘阴影> & <丢失的鲁特琴>",
+      "(img:waypoint) 去 areaidg1_13_2 ;; 奧格姆村"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:checkpoint) 尋找並進入 (color:aaaaa)大房子 以獲取 (quest:鍛造工具) 、 (quest:空白符文) 、 (img:artificer)",
+        "擊殺 處刑者, 進入 areaidg1_14 ;; 宅第壁壘"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "可選: (img:checkpoint) 尋找並進入(color:aaaaa)大房子 以獲取 (quest:空白符文) 、 (img:artificer)",
+        "擊殺 處刑者, 進入 areaidg1_14 ;; 宅第壁壘"
+      ]
+    },
+    [
+      "沿著 (img:help) 邊緣走, 進入 (img:checkpoint) areaidg1_15 ;; 奧格姆宅第",
+      "可選: 沿著對面的邊緣走 找到 (color:aaaaa)掛著的屍體 以獲取 (img:support)"
+    ],
+    [
+      "尋找並擊殺 第一層的 arena:烛火魔像 以獲取 (quest:燭光精髓)",
+      "(hint)__ 找到路口, 檢查周圍是否有 (img:checkpoint)",
+      "擊殺 arena:吉恩諾伯爵 , 進入 areaidg1_town (img:town) ;; 皆伐營地"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "倫利: <尋找熔爐>",
+        "蕾堤絲: <腐化痕跡>",
+        "與 (img:quest_2) arena:黑衣幽魂 對話, 進入 areaidg2_1 ;; 瓦斯提里郊區"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "蕾堤絲: <腐化痕跡>",
+        "與 (img:quest_2) arena:黑衣幽魂 對話, 進入 areaidg2_1 ;; 瓦斯提里郊區"
+      ]
+    }
+  ],
+  [
+    [
+      "擊殺 撕裂者, (img:portal) 離開",
+      "進入 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:阿薩拉 對話",
+      "沙漠地圖: areaidg2_10_1 ;; 莫頓挖石場"
+    ],
+    [
+      "可選: (img:artificer) (color:aaaaaa)法里登的寶藏",
+      "沿著 (img:checkpoint) 走",
+      "進入 (img:checkpoint) areaidg2_10_2 ;; 莫頓礦坑"
+    ],
+    [
+      "擊殺 arena:魯賈 , 與 (img:quest_2) arena:芮蘇 對話",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:芮蘇 對話",
+      "沙漠地圖: areaidg2_3a ;; 哈拉妮關口"
+    ],
+    [
+      "與 (img:quest_2) arena:阿薩拉 對話",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:芮蘇 和 (img:quest_2) arena:阿薩拉 對話",
+      "沙漠地圖: areaidg2_3a ;; 哈拉妮關口",
+      "進入 areaidg2_2 ;; 叛徒之路"
+    ],
+    [
+      "尋找並擊殺 arena:芭芭拉 獲取 (quest:巨靈之幣)",
+      "(hint)__ 沿著牆走, 找到紙符文",
+      "進入 (img:checkpoint) areaidg2_3 ;; 哈拉妮關口"
+    ],
+    [
+      "沿著峽谷邊緣走, 擊殺 arena:賈嫚拉",
+      "使用 (img:arena) 樓梯, 進入深處",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:扎卡 對話",
+      "沙漠地圖: areaidg2_13 ;; 絲克瑪試煉"
+    ],
+    [
+      "激活 (img:waypoint)",
+      "(hint)__ 升華可以稍後進行",
+      "(img:waypoint) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:阿薩拉 對話",
+      "沙漠地圖: areaidg2_4_1 ;; 凱斯城"
+    ],
+    [
+      "(color:ff00ff)擊殺 (color:aaaaaa)蛇 以獲取 (quest:卡巴拉部落聖物)",
+      "擊殺 arena:卡巴拉",
+      "(hint)__ arena:卡巴拉 通常在中心位置, 有一個 (img:checkpoint)",
+      "尋找並進入 (img:checkpoint) areaidg2_4_2 ;; 失落之城"
+    ],
+    [
+      "可選: (color:aaaaaa)石棺 以獲取 (img:spirit)  || <遊蕩的甲蟲> 以獲取 (color:66b2ff)寶石",
+      "尋找並進入 (img:checkpoint) areaidg2_4_3 ;; 掩埋神殿"
+    ],
+    [
+      "可選: 在 (img:checkpoint) (color:aaaaaa)元素奉獻 中獲取 (color:66b2ff)元素抗性 (img:ring) ",
+      "進入 (img:arena) 凱斯之心, 擊殺 arena:阿薩里恩",
+      "與 (img:quest_2) arena:女神 對話, 獲取 (quest:灰燼), 點燃她",
+      "獲取 (quest:水之精髓), (img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:扎卡 對話",
+      "沙漠地圖: areaidg2_5_1 ;; 乳齒象惡地"
+    ],
+    [
+      "可選: (img:support) (color:aaaaaa)雕像",
+      "進入 (img:checkpoint) areaidg2_5_2 ;; 骨坑"
+    ],
+    [
+      "(color:ff00ff)兩個任務: 擊殺 (color:aaaaaa)鬣狗 獲取 (quest:太陽部落聖物) || 擊殺 arena:遠古之蹄．埃克巴勃 獲取 (quest:乳齒象象牙)",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:扎卡 對話",
+      "沙漠地圖: areaidg2_6 ;; 泰坦之谷"
+    ],
+    [
+      "(color:ff00ff)兩個任務: 激活 (quest:3_封印) || 將 (quest:太陽部落聖物與卡巴拉部落聖物) 放入祭壇",
+      "尋找並進入 (img:checkpoint) areaidg2_7, 通常在中間位置 ;; 泰坦石窟"
+    ],
+    [
+      "擊殺 arena:巨像．札爾瑪拉斯 獲取 (quest:火焰紅寶石)",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "與 (img:quest_2) arena:扎卡 對話, 獲得 (quest:瓦斯提里的戰角)",
+      "到車頭吹響 (quest:瓦斯提里的戰角)",
+      "(img:quest_2) (color:aaaaaa)沙漠地圖: areaidg2_8 ;; 戴斯哈"
+    ],
+    [
+      "可選: (img:artificer) 在地圖側邊找到 (color:aaaaaa)骷髏",
+      "尋找 (quest:遺體) 獲取 (quest:遺書)",
+      "進入 (img:checkpoint) areaidg2_9_1 ;; 悼念之路"
+    ],
+    [
+      "進入 (img:checkpoint) areaidg2_9_2 ;; 戴斯哈尖塔"
+    ],
+    [
+      "在 靠近 (img:checkpoint) 的地方 激活 (color:aaaaaa)卡洛翰姊妹的石像",
+      "擊殺 arena:玷汙者托爾．谷爾, (img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "給 (quest:遺書) 給 arena:夏布林",
+      "與 (img:quest_2) arena:阿薩拉 對話",
+      "沙漠地圖: areaidg2_12_1 ;; 戴斯哈尖塔"
+    ],
+    [
+      "進入 (img:checkpoint) areaidg2_12_2 ;; 戴斯哈尖塔"
+    ],
+    [
+      "擊殺 arena:賈嫚拉",
+      "(img:portal) 去 areaidg2_town (img:town) ;; 阿杜拉車隊"
+    ],
+    [
+      "從車隊沿著左上角 (img:7) 走, 與 (img:quest_2) arena:黑衣幽魂 對話",
+      "按下 ESC: (color:aaaaaa)角色選擇&重新登入",
+      "與 (img:quest_2) arena:阿薩拉 對話, 進入 areaidg3_1 ;; 風沙沼澤"
+    ]
+  ],
+  [
+    [
+      "可選: (img:skill) arena:根淤 || (img:ring) (color:aaaaaa)掛在樹上的屍體",
+      "可選: (img:jeweller) 清理靠近出口的(img:checkpoint) (color:aaaaaa)歐洛克營地 ",
+      "進入 (img:checkpoint) areaidg3_town (img:town) ;; 高地神塔營地"
+    ],
+    [
+      "進入 areaidg3_3 ;; 叢林遺跡"
+    ],
+    [
+      "(color:ff00ff)兩個任務: 擊殺 arena:神威銀拳 || 尋找 (img:waypoint)",
+      "可選: 在 (img:checkpoint) (color:aaaaaa)叢林墓地 找到 <腰帶> ",
+      "進入 (img:checkpoint) areaidg3_2_1 ;; 感染荒地"
+    ],
+    [
+      "激活 (img:waypoint), 沿著邊緣走 (color:ff00ff)兩個任務:",
+      "(hint)__ (img:in-out) (img:arena) areaidg3_5 (img:waypoint) || (img:in-out) (img:arena) areaidg3_7 (img:waypoint) ;; 龍蜥濕地 & 阿札克泥沼",
+      "使用最後一個 (img:waypoint) 前往 areaidg3_3 ;; 叢林遺跡"
+    ],
+    [
+      "進入 areaidg3_4 ;; 劇毒墓穴"
+    ],
+    [
+      "尋找 (quest:屍體) 獲取 (quest:屍蛇毒液)",
+      "(img:portal) 去 areaidg3_town (img:town) ;; 高地神塔營地"
+    ],
+    [
+      "瑟維: <滑行死者>",
+      "(hint)__ 獎勵是永久的, 無法更改",
+      "(img:waypoint) 去 areaidg3_7 ;; 阿札克泥沼"
+    ],
+    [
+      "可選: (img:quest_2) (color:aaaaaa)點燃火炬以獲得暫時buff",
+      "(hint)__ 25% 火焰抗性 & 稀有度, 在靠近中心的位置",
+      "擊殺 arena:沼澤女巫．尹娜杜克 獲取 (quest:尹娜杜克的幽暗長鋒) 、 (quest:寶石花顱骨)",
+      "(img:portal) 去 areaidg3_town (img:town) ;; 高地神塔營地"
+    ],
+    [
+      "瑟維: <部落復仇>",
+      "(img:waypoint) 去 areaidg3_5 ;; 龍蜥濕地"
+    ],
+    [
+      "沿著邊緣走, 擊殺 arena:龍蜥．欽路錫安 以獲取 (quest:最後通牒)",
+      "(hint)__ 如果你找到 (img:arena) areaidg3_10_airlock, (img:checkpoint) 返回 ;; 混沌神殿",
+      "(hint)__ 從起點開始, 沿著相反的邊緣走",
+      "enter areaidg3_6_1 ;; 吉卡尼的機械迷城"
+    ],
+    [
+      "激活 (img:waypoint)",
+      "(img:waypoint) 去 areaidg3_5 ;; 龍蜥濕地"
+    ],
+    [
+      "尋找並進入 (img:checkpoint) areaidg3_10_airlock ;; 混沌神殿",
+      "(hint)__ 如果你之前找到過它, (img:checkpoint) 傳送過去",
+      "(hint)__ 否則, 沿著相反的邊緣走"
+    ],
+    [
+      "激活 (img:waypoint)",
+      "(hint)__ 你可以現在進行, 也可以稍後再來",
+      "(img:waypoint) 去 areaidg3_6_1 ;; 吉卡尼的機械迷城"
+    ],
+    [
+      "尋找 (quest:2_小型靈魂核心) 來打開 arena:遺忘的黑顎 & 出口",
+      "(hint)__ 在 (img:checkpoint) 擊殺 arena:遺忘的黑顎 後, 沿著紅色路徑走",
+      "沿著紅色路徑走到 (img:checkpoint) areaidg3_6_2 ;; 吉卡尼的聖域"
+    ],
+    [
+      "尋找 (quest:2_中型靈魂核心) 來打開 (quest:發電機)",
+      "(hint)__ (img:checkpoint) 選擇一側, 找到 (quest:核心) || 激活 (quest:發電機) || (img:checkpoint)",
+      "按下 ESC: (color:aaaaaa)重生 || 在 (img:quest_2) 附近激活 (quest:大型靈魂核心)",
+      "擊殺 arena:核心守衛．茲科亞特 獲取 (quest:大型靈魂核心)",
+      "(img:waypoint) 去 areaidg3_2_1 ;; 感染荒地"
+    ],
+    [
+      "在附近插入 (quest:大型靈魂核心)",
+      "進入 areaidg3_2_2 ;; 馬特蘭水道"
+    ],
+    [
+      "找到並激活 (color:aaaaaa)大型運河槓桿",
+      "在過場動畫後, (img:portal) 去 areaidg3_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "沿著 (img:3) 樓梯, 與 (img:quest_2) arena:艾瓦 對話",
+      "進入 areaidg3_8 ;; 淹沒之城"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(img:in-out) (img:arena) areaidg3_9  (img:waypoint) ;; 熔岩寶庫",
+        "進入 (img:checkpoint) areaidg3_11 ;; 污垢頂峰"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "可選: (img:artificer)擊殺 (img:checkpoint) areaidg3_9 的 arene:梅克圖 ;; 熔岩寶庫",
+        "(hint)__ 然後 (img:portal), (img:quest_2) arena:奧斯瓦德 || (img:waypoint) 去 areaidg3_8 ;; 淹沒之城",
+        "進入 (img:checkpoint) areaidg3_11 ;; 污垢頂峰"
+      ]
+    },
+    [
+      "可選: 找到 (img:checkpoint) (color:aaaaaa)大鍋 以獲取 藥水",
+      "(hint)__ 需要先在區域內擊殺怪物獲取 (quest:3_不同顏色的蘑菇)",
+      "擊殺 arena:污垢女王 獲取 (quest:神殿大門神像)",
+      "(img:portal) 去 areaidg3_town (img:town) ;; 皆伐營地"
+    ],
+    {
+      "condition": [
+        "league-start",
+        "yes"
+      ],
+      "lines": [
+        "(quest:重鑄台) (img:artificer) (也可以稍後再來)",
+        "(hint)__ (img:waypoint) 去 areaidg3_9, 擊殺 arena:梅克圖 獲取 (quest:卡瑪薩之錘) ;; 熔岩寶庫",
+        "(hint)__ (img:portal) 去 皆伐營地, 與 (img:quest_2) arena:奧斯瓦德 對話",
+        "沿著 (img:3) 樓梯, 進入 areaidg3_12 ;; 科佩克神殿"
+      ]
+    },
+    {
+      "condition": [
+        "league-start",
+        "no"
+      ],
+      "lines": [
+        "沿著 (img:3) 樓梯, 進入 areaidg3_12 ;; 科佩克神殿"
+      ]
+    },
+    [
+      "尋找 (img:arena) 在角落的樓梯(共三層), 擊殺 arena:凱亞祖利",
+      "與 (img:quest_2) arena:艾瓦 對話, 進入 areaidg3_town (img:town) ;; 皆伐營地"
+    ],
+    [
+      "通過 崎點 進入 areaidg3_14 ;; 奧札爾"
+    ],
+    [
+      "(color:ff00ff)兩個任務: 擊殺怪物以獲取 (quest:犧牲之心) || 擊殺 arena:納帕茲",
+      "(hint)__ 在下一個區域也能得到犧牲之心",
+      "(hint)__ 如果你找到了鋪磚道路，那麼通常離 (img:checkpoint) arena:納帕茲 不遠了",
+      "尋找並進入 (img:checkpoint) areaidg3_16 ;; 阿戈拉"
+    ],
+    [
+      "擊殺怪物以獲取 (quest:犧牲之心) || 尋找 廣場 和 (img:checkpoint)",
+      "尋找 祭壇 並拿取(quest:獻祭匕首), 放置 (quest:犧牲之心)",
+      "(hint)__ 通常在 廣場 的 (img:0), 但你需要繞過 (img:6)",
+      "進入 (img:checkpoint) areaidg3_17 (通常在 (img:7) 的桌子) ;; 漆黑密室"
+    ],
+    [
+      "擊殺 arena:多里亞尼, (img:portal) 去 areaidg3_town (img:town) ;; 皆伐營地",
+      "(hint)__ 這個區域由迷宮和橋樑連接而成"
+    ],
+    [
+      "與 (img:quest_2) arena:多里亞尼 對話, 進入 areaidg_endgame_town (img:town) ;; 高地神塔庇護所"
+    ],
+    [
+      "與 (img:quest_2) arena:多里亞尼 對話",
+      "<劇情跟蹤器現在可以在設定中關閉>"
+    ]
+  ]
+]

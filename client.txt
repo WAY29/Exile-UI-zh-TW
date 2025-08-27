@@ -1,0 +1,514 @@
+;#####################################################
+;## general information/instructions
+;#####################################################
+
+;## purpose of this file
+	;## the script uses this file to detect specific word patterns in data that was copied from the game-client in order to extract information
+	;## these patterns used to be hard-coded for English only, but they are now exposed in this txt-file and can be adapted to new target languages
+
+
+;## file structure
+	;## the script ignores TABs, empty lines, as well as lines/sections marked as comments (;##)
+	;## each non-comment line in this file is a key/value pair, divided into two parts:
+		;##	key			=	"value"
+		;## the value has to be enclosed in quotation marks
+		;## the value itself can still contain quotation marks, e.g. key = "Guff "Tiny" Grenn" (just make sure the total number of quotation marks is even)
+		;## to leave a value blank, set it to "0" (there will be examples of this further below)
+
+
+;## how to translate/localize the data in this file
+	;## NEVER edit the key of a line, i.e. whatever is left of the equal sign
+	;## if a value contains an abbreviation or text-string that's not immediately clear, look at the key-name for more context (e.g. global_calibrate = "cal")
+	;## the majority of values in this file are text-strings as they are displayed in game, so you'll have to replace them with the ones from the target language
+
+
+;## some notation remarks
+	;## AutoHotkey-specific:
+		;## in order to add ampersands (&) to a string, include double ampersands in the value, e.g. key = "this && that"
+	;## custom notations:
+		;## in order to add line-breaks to a string, include ";" in the value, e.g. "line 1;line2"
+		;## I use "<>" as a replacement for quotation marks because they look better when using Fontin Smallcaps
+
+
+;## syntax differences
+	;## depending on the target language, info-extraction from the game-client has to be adjusted
+	;## generally, the script looks for certain patterns to determine what kind of information is present within the data copied from the client
+	;## I know enough German to supply some edge-case examples/requirements for syntax-structures that differ from English, but not enough to add complete support for German game-clients
+	;## use these examples to adjust the language-file to your own language:
+
+	;## with an English client, "You have entered Highgate." will be displayed whenever you enter Highgate
+		;## the script uses this key-value pair to extract the location-name from the text in the chat-window:
+		;## 		log_enter	=	"You have entered"
+		;## the script recognizes "You have entered", then 'knows' that the rest of the sentence is the location-name (so white-space and everything else will be removed)
+
+	;## with a German client, "Ihr habt 'Hohenpforte' betreten." will be displayed instead
+		;## so the script has to look for "Ihr habt" and "betreten" instead, then remove them to extract the location-name
+		;## to let the script 'know' of this structural difference, placeholders have to be included in the value
+		;## simply add one or more placeholders in the correct spots:
+		;##		log_enter	=	"Ihr habt # betreten"
+
+
+
+;#####################################################
+;## system-settings
+;#####################################################
+
+;## these are some global system-settings that are dependant on the target language
+		system_font			=	"Microsoft YaHei UI"		;## except for Fontin SmallCaps, the specified font-type has to be installed on the system
+		system_fullstop			=	"."				;## the type of punctuation mark the language uses at the end of a sentence (e.g. Japanese uses a different fullstop)
+		system_parenthesis		=	"（#）"				;## the level-up message in the game's client.txt log-file "CHARACTER (CLASS) is now Level X" uses a different parenthesis in Japanese at least
+		system_poedb_lang		=	"tw"				;## which language to use on poedb (available: tw, cn, kr, us, jp, ru, po, th, fr, de, es)
+		system_poedb_lang		=	"詞綴"			;## it's the localized name of this section on poeDB: https://poedb.tw/us/Modifiers
+
+
+;#####################################################
+;## credits: contributors
+;#####################################################
+
+;## these names will be shown in a tooltip when hovering over the "credits" label	;## the tooltip is segmented into smaller boxes
+        contributor			=	"lailloken"     ;## you can add additional <contributor> lines, and each value will have its own box
+		contributor			=	"Drava"			
+        contributor			=	"Longlone"
+
+
+
+;#####################################################
+;## mapping-related strings
+;#####################################################
+
+;## these strings will be used in the mapping-tracker to add more information to log-entries
+;## these strings will be added, so instead of only displaying "bunker", the entry will read "heist: bunker"
+		maps_heist			=	"劫盜"				;## PoE1 only
+		maps_logbook			=	"探險日誌"			;## PoE1 and PoE2
+		maps_delirium			=	"幻像異界"			;## PoE1 and PoE2
+		maps_boss			=	"boss"				;## PoE1 and PoE2
+		maps_tower			=	"tower"				;## PoE2 only, used to tag tower-maps, e.g. <sinking spire (tower)> instead of just <sinking spire>
+
+;## these strings will replace certain map names entirely, e.g. <boss: elder> instead of <absence of value and meaning>
+		maps_maven_invitation		=	"釋界之邀"		;## PoE1 only (whole block)
+		maps_maven			=	"釋界"
+		maps_hunger			=	"無盡渴望"
+		maps_blackstar			=	"黯星"
+		maps_exarch			=	"灼烙總督"
+		maps_eater			=	"吞噬天地"
+		maps_shaper			=	"塑界者"
+		maps_elder			=	"尊師"
+		maps_elder			=	"uber 尊師"
+		maps_oshabi			=	"奧莎比"
+		maps_atziri			=	"瓦爾女王"
+		maps_atziri			=	"uber 瓦爾女王"
+		maps_sirus			=	"賽勒斯"
+		maps_cortex			=	"深沉記憶"
+
+
+		maps_ritualboss			=	"迷霧之王"		;## PoE1 and PoE2
+		maps_ritualboss			=	"無量困境"		;## PoE1 and PoE2, the map-name of the king fight
+
+
+		maps_xesht			=	"烈許"				;## 僅PoE2 (整塊)
+		maps_xesht			=	"扭曲領域"		;## 謝什特戰鬥的地圖名
+		maps_arbiter			=	"灰燼仲裁者"
+		maps_arbiter			=	"燃燒豐碑"		;## 仲裁者戰鬥的地圖名
+
+
+		maps_hideout			=	"藏身處"			;## PoE2 only (whole block), claimable hideout on the atlas (separate key/value pair in case more hideouts are added in the future)
+		maps_limestone_hideout		=	"藏身處：石灰岩"
+		maps_felled_hideout		=	"藏身處：殞落"
+		maps_canal_hideout		=	"藏身處：運河"
+		maps_shrine_hideout		=	"藏身處：神殿"
+
+;## PoE2 only (whole block): atlas-related strings
+		maps_seer			=	"無名先知"			;## unique maps on the atlas
+		maps_vaults			=	"卡瑪薩秘寶庫"
+		maps_wildwood			=	"翠綠荒林"
+		maps_selenite			=	"沉默洞穴"
+		maps_castaway			=	"漂流者之所"
+		maps_paradise			=	"純淨樂園"
+		maps_megalith			=	"法瑞爾巨石"
+		maps_lake			=	"破裂迷湖"
+
+		maps_voidreliquary		=	"聖物寶庫"		;## accessible via reliquary keys
+
+		maps_losttowers			=	"失落之塔"			;## the five tower-maps
+		maps_alpineridge		=	"高山山脊"
+		maps_bluff			=	"絕壁"
+		maps_sinkingspire		=	"沉溺尖塔"
+		maps_mesa			=	"平頂荒漠"
+		maps_copper_citadel		=	"青銅城塞"		;## the tree citadel-maps
+		maps_stone_citadel		=	"岩石城塞"
+		maps_iron_citadel		=	"鋼鐵城塞"
+
+		maps_biome			=	"biome:"			;## each map on the atlas belongs to a biome
+
+
+;## these strings are shown in the map-info panel
+		maps_stats_full			=	"mods#quantity#rarity#pack size#maps#scarabs#currency"		;## PoE1 only, map rolls/multipliers
+		maps_stats			=	"詞#數#稀#怪#圖#甲#通"							;## PoE1 only, x = multiplication-sign, see above for the rest
+
+
+		maps_waystones			=	"換界石:"			;## PoE2 only, replaces <Waystone Drop Chance>
+
+
+
+;#####################################################
+;## character tracking
+;#####################################################
+
+;## the script continually looks for patterns in the client.txt log-file generated by the game in order to track various statistics
+;## replace the English text-strings with the corresponding ones from the target language
+;## REMINDERS: case-sensitivity, match text in chat-window
+		log_location			=	"0"				;## PoE1 only (missing from PoE2?), certain languages may highlight location-names with characters that need to be removed (e.g. German: 'Hohenpforte', which would require log_location = "'")
+		log_enter			=	"你已進入"		;## PoE1 only (missing from PoE2?), as mentioned earlier, this key may need placeholders depending on the target language
+
+;## -----------------------------------------------------------------------------------
+		log_level			=	"目前等級："			;## PoE1 and PoE2 (whole block), when your character levels up
+		log_whois			=	"、等級： # 、聯盟："		;## using the /whois in-game command, e.g. "Lailloken is a level 69 Champion in the Standard League..."
+		log_slain			=	"被殺死了"		;## when your character dies
+		log_suicide			=	"has committed suicide"		;## when your character dies from self-damage
+		log_killed			=	"你一共殺死了 # 隻怪物"	;## when activating the "/kills" command
+
+
+;## these strings are required to make tracking in the lab-overlay possible on non-English clients
+;## these are not case-sensitive but still need to match the in-game names 1:1
+		lab_aspirant's trial		=	"昇華試煉"		;## PoE1 only (whole block)
+		lab_basilica annex		=	"教堂附館"
+		lab_basilica atrium		=	"教堂庭院"
+		lab_basilica halls		=	"教堂聖殿"
+		lab_basilica passage		=	"教堂通道"
+		lab_domain crossing		=	"領地岔點"
+		lab_domain enclosure		=	"領地勢力"
+		lab_domain path			=	"領地通路"
+		lab_domain walkways		=	"領地走道"
+		lab_estate crossing		=	"莊園岔點"
+		lab_estate enclosure		=	"莊園勢力"
+		lab_estate path			=	"莊園通路"
+		lab_estate walkways		=	"莊園走道"
+		lab_mansion annex		=	"宅邸附館"
+		lab_mansion atrium		=	"宅邸庭院"
+		lab_mansion halls		=	"宅邸殿堂"
+		lab_mansion passage		=	"宅邸通道"
+		lab_sanitorium annex		=	"安養附館"
+		lab_sanitorium atrium		=	"安養庭院"
+		lab_sanitorium halls		=	"安養殿堂"
+		lab_sanitorium passage		=	"安養通道"
+		lab_sepulchre annex		=	"陰墓附館"
+		lab_sepulchre atrium		=	"陰墓庭院"
+		lab_sepulchre halls		=	"陰墓殿堂"
+		lab_sepulchre passage		=	"陰墓通道"
+
+
+
+;#####################################################
+;## league-content tracking via dialogue
+;#####################################################
+
+;## colons are included in the value and not hard-coded (just in case a language uses a different punctuation mark), so pay attention to how text is displayed in the chat-window
+;## don't leave out the punctuation mark because it's important for accuracy and to avoid unwanted matches (especially Rog)
+;## REMINDER: case-sensitivity, match text in chat-window
+		log_delirium			=	"奇怪的聲音:"			;## PoE1 and PoE2
+
+		log_blight			=	"修女卡西亞:"			;## PoE1 only (whole block)
+		log_harvest			=	"奧莎比:"
+		log_incursion			=	"探險大師艾瓦:"
+		log_bestiary			=	"野獸大師埃哈:"
+		log_delve			=	"挖掘大師尼科:"
+		log_betrayal			=	"幻隱大師瓊恩:"
+		log_betrayal			=	"寂靜屠夫愛斯林．勞佛瑞:"
+		log_betrayal			=	"冷血卡麥歷亞:"
+		log_betrayal			=	"光明判吏艾爾雷恩:"
+		log_betrayal			=	"重生者格拉維奇:"
+		log_betrayal			=	"哥夫．泰尼．格林:"
+		log_betrayal			=	"戰爭大師哈庫:"
+		log_betrayal			=	"惡靈鐵匠西拉克:"
+		log_betrayal			=	"竄逃之彼:"
+		log_betrayal			=	"傑納斯．普蘭德斯:"
+		log_betrayal			=	"放逐者領主喬恩:"
+		log_betrayal			=	"石之子庫歐．果雅:"
+		log_betrayal			=	"狼嚎里歐:"
+		log_betrayal			=	"午夜匠師萊可．馬隆尼:"
+		log_betrayal			=	"琳．依休:"
+		log_betrayal			=	"撲殺者托菈:"
+		log_betrayal			=	"勝利之捷瓦甘:"
+		log_betrayal			=	"靜默者瓦里西:"
+		log_ultimatum			=	"試煉大師:"
+		log_maven			=	"釋界:"
+
+
+;## expedition note: in PoE1, there is a difference in displayed names depending on whether the NPCs greet you when they first see you in a map (Gwennen, the Gambler) or whether the encounter has finished (Gwennen)
+;## always use the name displayed when they greet you
+		log_expedition			=	"戰鬥詩人．丹尼格:"	;## PoE1 only (whole block)
+		log_expedition			=	"賭徒．關南:"
+		log_expedition			=	"羅格:"				;## for some reason, Rog is always displayed as simply "Rog", regardless of when he speaks (at least in English)
+		log_expedition			=	"討價還價．圖貞:"
+
+;## -----------------------------------------------------------------------------------
+		log_expedition 2		=	"丹尼格:"			;## PoE2 only, where only the names are displayed
+		log_expedition 2		=	"關南:"
+		log_expedition 2		=	"羅格:"
+		log_expedition 2		=	"圖貞:"
+
+
+
+;#####################################################
+;## item-related strings
+;#####################################################
+
+;## the script checks which item is being omni-clicked
+;## REMINDER: case-sensitivity, match text in item-tooltip
+;## NOTE: the following sections are divided into groups depending on where to find the required patterns (to make it simpler), but the script itself always checks the text copied from the game via ALT + CTRL + C
+;## NOTE: it's possible that there's a difference in the ALT-CTRL-C text and the easier-to-find text (e.g. German tooltips display "ss" whenever the ALT-CTRL-C text contains "ß"), so be aware of that if the target language has such variations
+
+;## these strings are the item-names of certain items (top of the in-game tooltip)
+		items_waystone			=	"地圖鑰匙"						;## PoE2 only (whole block)
+		items_soul_core			=	"靈魂核心"
+		items_talisman			=	"Talisman"
+		items_uncut_gem			=	"未切割的技能寶石"
+		items_uncut_gem			=	"未切割的輔助寶石"
+		items_uncut_gem			=	"未切割的精魂寶石"
+
+;## these strings are displayed in the in-game tooltip when hovering over an item
+		items_unidentified		=	"未鑑定"						;## PoE1 and PoE2 (whole block)
+		items_unmodifiable		=	"不可調整的"						;## example: memories (atlas item), sanctum relics
+		items_corrupted			=	"已汙染"
+		items_mirrored			=	"已複製"
+		items_unequippable		=	"你無法使用這項裝備，他的數值將被忽略"	;## when you have an item equipped but lack the required attributes
+
+
+		items_armour			=	"護甲:"						;## PoE1 and PoE2 (whole block)
+		items_evasion			=	"閃避值:"
+		items_energy			=	"能量護盾:"
+		items_ward			=	"保護:"
+		items_aps			=	"每秒攻擊次數:"
+		items_quality			=	"品質:"
+		items_phys_dmg			=	"物理傷害:"
+		items_dmg			=	"#傷害:"
+		items_chaos_dmg			=	"混沌傷害:"
+
+		items_ele_dmg			=	"元素傷害:"					;## PoE1 only, ele-dmg is displayed differently
+
+		items_map_waystonechance	=	"Waystone Drop Chance:"					;## PoE2 only (whole block)
+		items_map_revives		=	"Revives Available:"
+
+
+		items_maptier			=	"地圖階級:"						;## PoE1 only (whole block)
+		items_mapreward			=	"獎勵:"						;## T17 valdo maps have specific rewards
+		items_mapreward_foil		=	"貼模 "							;## also valdo rewards
+		items_mapquantity		=	"物品數量:"
+		items_maprarity			=	"物品稀有度:"
+		items_mappacksize		=	"怪物群大小:"
+
+
+		items_mapmaps			=	"更多地圖:"						;## PoE1 only (whole block), T17 maps received various multipliers in 3.24.1
+		items_mapscarabs		=	"更多聖甲蟲:"
+		items_mapcurrency		=	"更多通貨:"
+
+
+		items_stack			=	"堆疊數量:"						;## PoE1 and PoE2, for stackable items
+
+
+		items_mapname			=	"#"							;## PoE1 only (whole block), the format of names on map-items, e.g. Frozen River Map (German, for example, uses 'Frozen River'-Map)
+		items_elderguardian		=	"地圖被#佔據"					;## the implicits on elder-guardian maps
+		items_enslaver			=	"異界．奴役"
+		items_eradicator		=	"異界．根除"
+		items_constrictor		=	"異界．干擾"
+		items_purifier			=	"異界．淨化"
+
+
+		items_conqueror			=	"地圖含有#的壁壘"				;## PoE1 only (whole block), the implicits on conqueror maps
+		items_baran			=	"巴倫"
+		items_drox			=	"圖拉克斯"
+		items_al-hezmin			=	"奧赫茲明"
+		items_veritania			=	"維羅提尼亞"
+
+
+;## these strings are displayed in the in-game tooltip when hovering over an item and holding the hotkey for advanced item descriptions (usually ALT)
+		items_prefix			=	"前綴"			;## PoE1 only (whole block), either missing from PoE2 at the moment, or not relevant
+		items_prefix_allowed		=	"允許前綴 #"		;## implicit that modifies affix-counts (it's important to place the placeholder in a way that matches singular and plural forms)
+		items_suffix			=	"後綴"
+		items_suffix_allowed		=	"允許後綴 "
+		items_affix			=	""#""					;## in my limited testing, I only found Japanese to use something other than quotation marks (「#」)
+		items_uniquemod			=	"傳奇詞綴"
+		items_implicit			=	"固定詞綴"
+		items_implicit_exarch		=	"灼烙總督固定詞綴"
+		items_implicit_eater		=	"吞噬天地固定詞綴"
+		items_implicit_vaal		=	"已汙染固定詞綴"
+		items_implicit_tiers		=	"低階"				;## the six types of eldritch-implicit tiers, in ascending order
+		items_implicit_tiers		=	"高階"
+		items_implicit_tiers		=	"宏偉"
+		items_implicit_tiers		=	"卓越"
+		items_implicit_tiers		=	"精緻"
+		items_implicit_tiers		=	"完美"
+		items_tier			=	"階層"					;## this refers to modifier tiers, usually displayed as "(Tier: X)"
+		items_unscalable		=	"無法使用的值"			;## this is displayed next to certain modifiers, e.g. "Hits cannot be evaded", "Socketed gems are supported by XYZ"
+
+
+;## these strings are displayed in the item-text when copying advanced item descriptions into clipboard (usually ALT + CTRL + C)
+		items_ilevel			=	"物品等級:"			;## PoE1 and PoE2 (whole block)
+		items_requirements		=	"需求:"
+		items_level			=	"等級:"
+		items_str			=	"力量:"			;## for some reason, unidentified items show full attribute-strings, while ID'd ones show abbreviations
+		items_str			=	"力量:"
+		items_dex			=	"敏捷:"
+		items_dex			=	"敏捷:"
+		items_int			=	"智慧:"
+		items_int			=	"智慧:"
+
+
+		items_rarity			=	"稀有度:"			;## PoE1 and PoE2 (whole block), important: every string in the following block has to match the one in the "Rarity: XYZ" line in the clipboard-info
+		items_rare			=	"稀有"				;## do not mix these strings with those from the "Item Class: XYZ" line (class and rarity are sometimes similar but not 100% the same)
+		items_unique			=	"傳奇"
+		items_normal			=	"普通"
+		items_magic			=	"魔法"
+		items_currency			=	"通貨"
+		items_gem			=	"寶石"
+
+
+		items_class			=	"物品種類:"			;## PoE1 and PoE2, important: every string in the following lines has to match the one in the "Item Class: XYZ" line in the clipboard-info
+		items_gem			=	"Support Gems"			;## PoE2 only
+		items_map fragments		=	"地圖碎片"			;## PoE1 only (rest of block)
+		items_heist brooches		=	"劫盜胸針"
+		items_heist cloaks		=	"劫盜披風"
+		items_heist gear		=	"劫盜裝備"
+		items_heist tools		=	"劫盜工具"
+
+											;## PoE1 only, the following strings come in groups of three
+		items_shaper			=	"塑者之物"			;## the first string is found at the very end of an item's copied data
+		items_shaper_prefix		=	"塑者的"			;## the second string is found in every prefix
+		items_shaper_suffix		=	"塑者之"			;## the third string is found in every suffix
+
+		items_elder			=	"尊師之物"
+		items_elder_prefix		=	"尊師的"
+		items_elder_suffix		=	"尊師之"
+
+		items_crusader			=	"聖戰軍王"
+		items_crusader_prefix		=	"聖戰士的"
+		items_crusader_suffix		=	"聖戰士之"
+
+		items_redeemer			=	"救贖者物品"
+		items_redeemer_prefix		=	"救贖者的"
+		items_redeemer_suffix		=	"救贖者之"
+
+		items_hunter			=	"狩獵者物品"
+		items_hunter_prefix		=	"狩獵者的"
+		items_hunter_suffix		=	"狩獵者之"
+
+		items_warlord			=	"總督軍物品"
+		items_warlord_prefix		=	"總督軍的"
+		items_warlord_suffix		=	"征服之"
+
+		items_synthesis			=	"追憶之物"
+
+
+;## these strings are the current(ly planned) item-classes for PoE2
+;## relevant for poedb context-menu link and item-info feature
+;## has to match the strings COPIED from the item (not while hovering)
+		items_class_Claws		=	"Claws"
+		items_class_Daggers		=	"Daggers"
+		items_class_Wands		=	"Wands"
+		items_class_One Hand Swords	=	"One Hand Swords"
+		items_class_One Hand Axes	=	"One Hand Axes"
+		items_class_One Hand Maces	=	"One Hand Maces"
+		items_class_Sceptres		=	"Sceptres"
+		items_class_Spears		=	"Spears"
+		items_class_Flails		=	"Flails"
+		items_class_Bows		=	"Bows"
+		items_class_Staves		=	"Staves"
+		items_class_Two Hand Swords	=	"Two Hand Swords"
+		items_class_Two Hand Axes	=	"Two Hand Axes"
+		items_class_Two Hand Maces	=	"Two Hand Maces"
+		items_class_Quarterstaves	=	"Quarterstaves"
+		items_class_Crossbows		=	"Crossbows"
+		items_class_Traps		=	"Traps"
+		items_class_Amulets		=	"Amulets"
+		items_class_Rings		=	"Rings"
+		items_class_Belts		=	"Belts"
+		items_class_Gloves		=	"Gloves"
+		items_class_Boots		=	"Boots"
+		items_class_Body Armours	=	"Body Armours"
+		items_class_Helmets		=	"Helmets"
+		items_class_Quivers		=	"Quivers"
+		items_class_Foci		=	"Foci"
+		items_class_Shields		=	"Shields"
+		items_class_Bucklers		=	"Bucklers"
+		items_class_Jewels		=	"Jewels"
+		items_class_Life Flasks		=	"Life Flasks"
+		items_class_Mana Flasks		=	"Mana Flasks"
+		items_class_Charms		=	"Charms"
+		items_class_Socketable		=	"Socketable"		;## runes and soul cores
+
+
+;## these are mod-related strings in item tooltips, e.g. "+X to Armour", "+X to maximum Energy Shield"
+		mods_cluster_enchant		=	"附加 # 個天賦"							;## PoE1 only (whole block), the first line on cluster jewels: "Adds X Passive Skills (enchant)"
+		mods_cluster_passive		=	"附加的小型天賦給予:"
+		mods_cluster_passive		=	"附加的小天賦給予:"
+		mods_cluster_passive		=	"1 個附加的天賦為"						;## mods that provide a notable, e.g. "1 Added Passive Skill is Magnifier"
+		mods_cluster_remove		=	"匕首攻擊增加擊中和異常狀態傷害"		;## the %-values need to be removed from this block of values ("deal x% damage" -> "deal damage")
+		mods_cluster_remove		=	"劍攻擊增加擊中和異常狀態傷害"		;## the usual # as a placeholder for the %-value doesn't work here
+		mods_cluster_remove		=	"錘或權杖攻擊增加擊中和異常狀態傷害"	;## these are specific cluster-enchants that have two lines because they affect multiple item-classes
+		mods_cluster_remove		=	"增加來自藥劑的魔力恢復"					;## one line will be removed, the other will be edited in order to make the tooltip more compact
+
+
+		mods_cluster_replace		=	"斧攻擊"				;## PoE1 only (whole block), these values are groups of two, where the first string will be replaced with the second one
+		mods_cluster_replace		=	"斧 && 劍攻擊"			;## so instead of displaying two lines, the tooltip will display:
+												;## Axe & Sword Attacks deal increased Damage with Hits and Ailments
+		mods_cluster_replace		=	"長杖攻擊"
+		mods_cluster_replace		=	"長杖, 錘 or 權杖攻擊"
+		mods_cluster_replace		=	"爪攻擊"
+		mods_cluster_replace		=	"爪 && 匕首"
+		mods_cluster_replace		=	"生命恢復"
+		mods_cluster_replace		=	"生命 && 魔力恢復"
+		mods_cluster_replace		=	"持續傷害"
+		mods_cluster_replace		=	"持續傷害"					;## if the target language doesn't have a common abbreviation, simply leave both values as they are
+
+												
+		mods_cluster_replace_res	=	"to "					;## PoE1 only (whole block), the tooltip doesn't show numerical values since cluster-enchants have fixed rolls, which looks weird if the language uses a preposition ("to cold resistance")
+		mods_cluster_replace_res	=	"Resistance"				;## the preposition has to be removed, so edit these strings so that it is the first value of this key: instead of using placeholders, you simply have to omit variable elements of this string
+												;## "to # Resistance" becomes:
+												;## 		"to "
+												;##		"Resistance"
+												;## if the target language doesn't have a preposition that needs to be removed, simply leave the values as they are
+
+
+		mods_blight_enchant		=	"配置"						;## PoE1 only (whole block), example: "Allocates Tribal Fury"
+		mods_eldritch_condition		=	"在#面前時，"			;## the condition for certain eldritch implicits, e.g. "While a Unique Enemy is in your Presence, +2 to maximum Cold Resistance"
+		mods_eldritch_interval		=	"，每 # 秒不超過 1 次"			;## the script changes this part into "(X sec)" to be more compact, e.g. "Gain 1 Rage on hit with attacks (X sec)"
+		mods_eldritch_targets		=	"非瓦爾打擊技能瞄準 # 額外附近"	;## this mod has two versions (enemy & enemies), so shorten this string and insert placeholders until the remainder matches both versions
+		mods_implicit_vendor		=	"物品販售給商人更有價值"			;## delve implicit
+		mods_qual_enchant		=	"品質不會增加防禦"			;## harvest enchant
+
+
+		mods_armour_flat		=	"+# 點護甲"						;## PoE1 and PoE2 (whole block)
+		mods_evasion_flat		=	"+# 點閃避值"
+		mods_energy_flat		=	"+# 最大能量護盾"
+		mods_ward_flat			=	"+# 保護"
+		mods_armour_%			=	"% 護甲"
+		mods_evasion_%			=	"% 閃避"
+		mods_energy_%			=	"% 能量護盾"
+		mods_ward_%			=	"% 保護"
+		mods_armour_evasion_%		=	"% 護甲與閃避"
+		mods_armour_energy_%		=	"% 護甲與能量護盾"
+		mods_evasion_energy_%		=	"% 閃避與能量護盾"
+		mods_damage_flat		=	"附加 # 至 #傷害"					;## e.g. "adds 7 to 17 XYZ damage..."
+		mods_phys_%			=	"% 物理傷害"				;## local mod on weapons
+
+		mods_armour_evasion_energy_%	=	"% 護甲、閃避與能量護盾"		;## PoE1 only (whole block), crafting bench
+		mods_contract_alert		=	"每 # 警戒等級"					;## from alert-specific mods on contracts
+		mods_memory_magnitude		=	"變動詞綴大小"		;## atlas memories apply an enchant that multiplies mod-values on maps (you'll have to use a memory and talk to Kirac to see this line)
+
+
+;## these are the names on Timeless Jewels, just in case the target language uses localized names		;## PoE1 only (whole block)
+		seed_brutal restraint		=	"安賽娜絲"
+		seed_brutal restraint		=	"貝爾巴拉"
+		seed_brutal restraint		=	"納西瑪"
+		seed_elegant hubris		=	"卡迪羅"
+		seed_elegant hubris		=	"卡斯皮羅"
+		seed_elegant hubris		=	"維多里奧"
+		seed_glorious vanity		=	"阿呼阿娜"
+		seed_glorious vanity		=	"多里亞尼"
+		seed_glorious vanity		=	"賽巴昆"
+		seed_lethal pride		=	"阿冦亞"
+		seed_lethal pride		=	"岡姆"
+		seed_lethal pride		=	"拉其塔"
+		seed_militant faith		=	"伊爾莉斯"
+		seed_militant faith		=	"神主"
+		seed_militant faith		=	"瑪薩里歐斯"
