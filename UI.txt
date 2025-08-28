@@ -162,7 +162,7 @@
 		global_variance			=	"變異 (0-255)"
 		global_hotkey			=	"熱鍵:"
 		global_panelsize		=	"面板大小:"
-		global_uisize			=	"UI大小:"
+		global_uisize			=	"工具欄大小:"
 		global_auto			=	"自動"
 		global_price			=	"價格"
 		global_all			=	"全部"
@@ -775,7 +775,7 @@
 		m_general_permissions		=	"腳本寫入權限測試:"
 		m_general_start			=	"開始測試"
 		m_general_admin			=	"以管理員身份重新啟動腳本"
-		m_general_toolbar		=	"UI大小:"
+		m_general_toolbar		=	"工具欄大小:"
 		m_general_hidetoolbar		=	"當不使用時隱藏工具欄"
 
 
