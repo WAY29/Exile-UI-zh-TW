@@ -138,7 +138,7 @@
 		maps_stone_citadel		=	"岩石城塞"
 		maps_iron_citadel		=	"鋼鐵城塞"
 
-		maps_biome			=	"biome:"			;## each map on the atlas belongs to a biome
+		maps_biome			=	"生物群系："			;## each map on the atlas belongs to a biome
 
 
 ;## these strings are shown in the map-info panel

@@ -1,246 +1,246 @@
 {
   "biomes": {
-    "desert": "+40% trial keys",
-    "forest": "+40% jewels",
-    "grass": "+40% socket currency",
-    "mountain": "+40% gold",
-    "swamp": "+40% basic currency",
-    "water": "+40% basic currency"
+    "沙漠": "掉落巨靈之幣以及最後通牒雕刻的機率增加 40%",
+    "森林": "掉落珠寶的機率增加 40%",
+    "草地": "掉落插槽通貨的機率增加 40%",
+    "山地": "掉落金幣的機率增加 40%",
+    "沼澤": "掉落基礎通貨的機率增加 40%",
+    "水": "掉落基礎通貨的機率增加 40%"
   },
   "maps": {
     "abyss": {
-      "name": "abyss",
+      "name": "絕望深淵",
       "boss": "tor gul"
     },
     "alpineridge": {
-      "name": "alpine ridge",
+      "name": "高山山脊",
       "boss": "beira + ignagduk"
     },
     "augury": {
-      "name": "augury",
+      "name": "預兆",
       "boss": "uxmal"
     },
     "azmerianranges": {
-      "name": "azmerian ranges",
+      "name": "阿茲莫里山脈",
       "boss": "king in the mists + brambleghast"
     },
     "backwash": {
-      "name": "backwash",
+      "name": "餘波",
       "boss": "queen of filth"
     },
     "bloodwood": {
-      "name": "bloodwood",
+      "name": "血林",
       "boss": "devourer"
     },
     "bloomingfield": {
-      "name": "blooming field",
+      "name": "盛放田野",
       "boss": "crowbell"
     },
     "bluff": {
-      "name": "bluff",
+      "name": "絕壁",
       "boss": "uxmal"
     },
     "burialbog": {
-      "name": "burial bog",
+      "name": "埋葬沼澤",
       "boss": "rootdredge"
     },
     "castaway": {
-      "name": "castaway",
+      "name": "漂流者之所",
       "boss": "torrek"
     },
     "cenotes": {
-      "name": "cenotes"
+      "name": "天然井"
     },
     "channel": {
-      "name": "channel",
+      "name": "通道",
       "boss": "hask"
     },
     "coppercitadel": {
-      "name": "the copper citadel",
+      "name": "青銅城塞",
       "boss": "jamanra2"
     },
     "creek": {
-      "name": "creek",
+      "name": "小溪",
       "boss": "bloated miller"
     },
     "crimsonshores": {
-      "name": "crimson shores",
+      "name": "緋紅海岸",
       "boss": "rattlecage"
     },
     "crypt": {
-      "name": "crypt",
+      "name": "靜謐陵墓",
       "boss": "candlemass"
     },
     "decay": {
-      "name": "decay",
+      "name": "腐蝕",
       "boss": "rotten druid"
     },
     "deserted": {
-      "name": "deserted",
+      "name": "棄置之地",
       "boss": "lord of the pit"
     },
     "forge": {
-      "name": "forge",
+      "name": "鍛造",
       "boss": "zalmarath"
     },
     "fortress": {
-      "name": "fortress",
+      "name": "堡壘",
       "boss": "balbala"
     },
     "frozenfalls": {
-      "name": "frozen falls",
+      "name": "冰凍瀑布",
       "boss": "beira"
     },
     "grimhaven": {
-      "name": "grimhaven",
+      "name": "肅穆之地",
       "boss": "asinia"
     },
     "headland": {
-      "name": "headland",
+      "name": "海角",
       "boss": "hask"
     },
     "hiddengrotto": {
-      "name": "hidden grotto",
+      "name": "隱密石窟",
       "boss": "tor gul"
     },
     "hive": {
-      "name": "hive"
+      "name": "巢穴"
     },
     "ironcitadel": {
-      "name": "the iron citadel",
+      "name": "鋼鐵城塞",
       "boss": "geonor"
     },
     "lake": {
-      "name": "the fractured lake"
+      "name": "破裂迷湖"
     },
     "loftysummit": {
-      "name": "lofty summit",
+      "name": "崇高之巔",
       "boss": "blackjaw"
     },
     "losttowers": {
-      "name": "lost towers",
+      "name": "失落之塔",
       "boss": "chetza"
     },
     "megalith": {
-      "name": "the phaaryl megalith",
+      "name": "法瑞爾巨石",
       "boss": "megalith bosses"
     },
     "mesa": {
-      "name": "mesa",
+      "name": "平頂荒漠",
       "boss": "karash"
     },
     "mineshaft": {
-      "name": "mineshaft",
+      "name": "礦井",
       "boss": "rudja"
     },
     "mire": {
-      "name": "mire",
+      "name": "泥沼",
       "boss": "beira"
     },
     "necropolis": {
-      "name": "necropolis",
+      "name": "魔影墓場",
       "boss": "draven"
     },
     "oasis": {
-      "name": "oasis",
+      "name": "幻景綠洲",
       "boss": "jamanra"
     },
     "paradise": {
-      "name": "untainted paradise"
+      "name": "純淨樂園"
     },
     "penitentiary": {
-      "name": "penitentiary",
+      "name": "監獄",
       "boss": "executioner"
     },
     "ravine": {
-      "name": "ravine",
+      "name": "溪谷",
       "boss": "zicoatl"
     },
     "riverside": {
-      "name": "riverside",
+      "name": "河畔",
       "boss": "silverfist"
     },
     "rustbowl": {
-      "name": "rustbowl",
+      "name": "銹碗",
       "boss": "rust king"
     },
     "sandspit": {
-      "name": "sandspit"
+      "name": "沙吐"
     },
     "savanna": {
-      "name": "savannah",
+      "name": "大草原",
       "boss": "hyena"
     },
     "seepage": {
-      "name": "seepage",
+      "name": "滲漏",
       "boss": "rotten druid"
     },
     "selenite": {
-      "name": "the silent cave",
+      "name": "沉默洞穴",
       "boss": "random boss"
     },
     "slick": {
-      "name": "slick"
+      "name": "浮油"
     },
     "spiderwoods": {
-      "name": "spider woods",
+      "name": "蜘蛛之林",
       "boss": "brambleghast"
     },
     "steamingsprings": {
-      "name": "steaming springs",
+      "name": "蒸氣之泉",
       "boss": "kabala"
     },
     "steppe": {
-      "name": "steppe"
+      "name": "乾草原"
     },
     "stonecitadel": {
-      "name": "the stone citadel",
+      "name": "岩石城塞",
       "boss": "doryani"
     },
     "sulphuriccaverns": {
-      "name": "sulphuric caverns",
+      "name": "硫化洞窟",
       "boss": "lord of the pit + bone colossus"
     },
     "sump": {
-      "name": "sump",
+      "name": "污水坑",
       "boss": "ignagduk"
     },
     "suntemple": {
-      "name": "sun temple",
+      "name": "太陽神殿",
       "boss": "ketzuli"
     },
     "swamptower": {
-      "name": "sinking spire",
+      "name": "沉溺尖塔",
       "boss": "blackjaw2"
     },
     "trenches": {
-      "name": "trenches"
+      "name": "壕溝"
     },
     "vaalcity": {
-      "name": "vaal city",
+      "name": "瓦爾古城",
       "boss": "viper"
     },
     "vaalfactory": {
-      "name": "vaal factory",
+      "name": "瓦爾工廠",
       "boss": "zicoatl"
     },
     "vaalfoundry": {
-      "name": "vaal foundry",
+      "name": "瓦爾鑄造廠",
       "boss": "mektul"
     },
     "wetlands": {
-      "name": "wetlands",
+      "name": "濕地",
       "boss": "devourer"
     },
     "wildwood": {
-      "name": "the viridian wildwood"
+      "name": "翠綠荒林"
     },
     "willow": {
-      "name": "willow",
+      "name": "垂柳",
       "boss": "lachlann"
     },
     "woodland": {
-      "name": "woodland",
+      "name": "木林",
       "boss": "bloated miller"
     }
   }
