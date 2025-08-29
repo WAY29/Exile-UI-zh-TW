@@ -479,8 +479,8 @@
 ;#####################################################
 
 ;## these strings are displayed/required when using the map-info feature
-		mapinfo_mod			=	"mods:"		;## as in map mod
-		mapinfo_rip			=	"rips:"		;## as in "rest in peace", used here as a replacement for revives on waystones
+		mapinfo_mod			=	"詞綴:"		;## as in map mod
+		mapinfo_rip			=	"復活次數:"		;## as in "rest in peace", used here as a replacement for revives on waystones
 
 
 
@@ -1024,9 +1024,9 @@
 ;#####################################################
 
 ;## these strings are displayed/required in the "map-info" section of the settings menu
-		m_mapinfo_enable		=	"enable the map-info panel"
-		m_mapinfo_shift			=	"shift-clicking activates the panel"
-		m_mapinfo_tab			=	"show panel while holding tab"
+		m_mapinfo_enable		=	"啟用 地圖資訊面板"
+		m_mapinfo_shift			=	"shift鍵點擊 啟用面板"
+		m_mapinfo_tab			=	"按住 tab 顯示面板"
 		m_mapinfo_textcolors		=	"text-colors:"
 		m_mapinfo_header		=	"header"					;## as in line at the top of a section/paragraph
 		m_mapinfo_logbook		=	"logbook-colors:"

@@ -19,9 +19,9 @@
 - [x] client.txt - 客户端词语翻译，有部分未翻译
 - [ ] essences.json
 - [x] help tooltips.json - UI描述，有部分未翻译
-- [ ] map-info 2.txt
+- [x] map-info 2.txt
 - [ ] map-info.txt
-- [ ] maps 2.json
+- [x] maps 2.json
 - [ ] timeless jewels.json
 - [ ] TLDR-tooltips.json
 - [x] UI.txt - 使用者介面

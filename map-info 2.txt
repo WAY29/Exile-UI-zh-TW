@@ -35,249 +35,249 @@ area
 ;## %-signs will be replaced by the actual %-roll of the map-mod, e.g. "ele reflect: %" -> "ele reflect: 15%"
 ;## try to trim down the text-strings as much as possible in order to keep the map-info panel compact
 
-[unknown mod]			;## do not translate this line
+[未知詞綴]			;## do not translate this line
 type	=	area
-text	=	unknown mods:
+text	=	未知詞綴:
 ID	=	000
 
-[# increased Quantity of Items found in this Area]
+[增加 # 此區域物品數量]
 type	=	area
-text	=	quant: +%
+text	=	物品數量: +%
 ID	=	001
 
-[# increased Rarity of Items found in this Area]
+[此地圖增加 # 物品稀有度]
 type	=	area
-text	=	rarity: +%
+text	=	物品稀有度: +%
 ID	=	002
 
-[# increased Gold found in this Area]
+[本區域中金幣的掉落量增加 #]
 type	=	area
-text	=	gold: +%
+text	=	金幣: +%
 ID	=	003
 
-[# increased Experience gain]
+[增加 # 獲得的經驗]
 type	=	player
-text	=	exp: +%
+text	=	經驗: +%
 ID	=	004
 
-[# increased Pack size]
+[增加 # 怪物群大小]
 type	=	monsters
-text	=	pack size: +%
+text	=	怪物群大小: +%
 ID	=	005
 
-[# increased number of Monster Packs]
+[怪物群數量增加 #]
 type	=	monsters
-text	=	extra packs: +%
+text	=	怪物群數量: +%
 ID	=	006
 
 [# increased amount of Chests]
 type	=	area
-text	=	extra chests: +%
+text	=	額外保險箱: +%
 ID	=	007
 
-[# increased Magic Monsters]
+[魔法怪物多 #]
 type	=	monsters
-text	=	extra magic: +%
+text	=	魔法怪物: +%
 ID	=	008
 
-[# increased number of Rare Monsters]
+[增加 # 稀有怪物的數量]
 type	=	monsters
-text	=	extra rares: +%
+text	=	稀有怪物: +%
 ID	=	009
 
-[# increased amount of Magic Chests]
+[魔法保險箱數量增加 #]
 type	=	area
-text	=	magic chests: +%
+text	=	魔法保險箱: +%
 ID	=	010
 
-[area contains # additional magic chests]
+[區域含有 # 個額外魔法箱子]
 type	=	area
-text	=	magic chests: +
+text	=	魔法保險箱: +
 ID	=	010
 
-[# increased amount of Rare Chests]
+[稀有保險箱數量增加 #]
 type	=	area
-text	=	rare chests: +%
+text	=	稀有保險箱: +%
 ID	=	011
 
-[area contains # additional rare chests]
+[區域含有 # 個額外稀有箱子]
 type	=	area
-text	=	rare chests: +
+text	=	稀有保險箱: +
 ID	=	011
 
-[# increased Magic Pack Size]
+[增加 # 魔法怪物群大小]
 type	=	monsters
-text	=	magic pack size: +%
+text	=	魔法怪物群大小: +%
 ID	=	012
 
-[Rare Monsters have # additional Modifier]
+[稀有怪物有 # 個額外詞綴]
 type	=	monsters
-text	=	mods on rares: +
+text	=	稀有怪物詞綴: +
 ID	=	013
 
-[Area contains an additional Shrine]
+[地圖含有 # 個額外的神殿]
 type	=	area
-text	=	extra shrine
+text	=	額外神殿
 ID	=	014
 
-[Area contains an additional Strongbox]
+[地圖含有 1 個額外的保險箱]
 type	=	area
-text	=	extra strongbox
+text	=	額外保險箱
 ID	=	015
 
-[Area contains an additional Essence]
+[區域包含額外 # 個精髓]
 type	=	area
-text	=	extra essence
+text	=	額外精髓
 ID	=	016
 
-[Area contains # additional packs of Undead]
+[區域含有額外 # 群亡靈]
 type	=	monsters
-text	=	undead packs
+text	=	亡靈怪物群
 ID	=	017
 
-[Area contains # additional packs of Beasts]
+[區域含有額外 # 群野獸]
 type	=	monsters
-text	=	beast packs
+text	=	野獸怪物群
 ID	=	018
 
-[Area contains # additional packs of Ezomyte Monsters]
+[區域含有額外 # 群艾茲麥怪物]
 type	=	monsters
-text	=	ezomyte packs
+text	=	艾茲麥怪物群
 ID	=	019
 
-[Area contains # additional packs of Faridun Monsters]
+[區域含有額外 # 群法里登怪物]
 type	=	monsters
-text	=	faridun packs
+text	=	法里登怪物群
 ID	=	020
 
-[Area contains # additional packs of Vaal Monsters]
+[區域含有額外 # 群瓦爾怪物]
 type	=	monsters
-text	=	vaal packs
+text	=	瓦爾怪物群
 ID	=	021
 
-[Area contains # additional packs of Iron Guards]
+[區域含有額外 # 群鍛鐵守衛]
 type	=	monsters
-text	=	iron guard packs
+text	=	鍛鐵守衛怪物群
 ID	=	022
 
-[Area contains # additional packs of Plagued Monsters]
+[區域含有額外 # 群染疫的怪物]
 type	=	monsters
-text	=	plagued packs
+text	=	染疫怪物群
 ID	=	023
 
-[Area contains # additional packs of Transcended Monsters]
+[區域含有額外 # 群超越的怪物]
 type	=	monsters
-text	=	transcended packs
+text	=	超越怪物群
 ID	=	024
 
-[Area contains # additional packs of Bramble Monsters]
+[區域含有額外 # 群刺荊怪物]
 type	=	monsters
-text	=	bramble packs
+text	=	刺荊怪物群
 ID	=	025
 
-[Monsters deal # of Damage as Extra Fire]
+[怪物造成相當於傷害 # 的額外火焰傷害]
 type	=	monsters
-text	=	extra fire dmg: +%
+text	=	火焰傷害: +%
 ID	=	026
 
-[Monsters deal # of Damage as Extra Cold]
+[怪物造成相當於傷害 # 的額外冰冷傷害]
 type	=	monsters
-text	=	extra cold dmg: +%
+text	=	冰冷傷害: +%
 ID	=	027
 
-[Monsters deal # of Damage as Extra Lightning]
+[怪物造成相當於傷害 # 的額外閃電傷害]
 type	=	monsters
-text	=	extra light dmg: +%
+text	=	閃電傷害: +%
 ID	=	028
 
-[# increased Monster Damage]
+[增加 # 怪物傷害]
 type	=	monsters
-text	=	inc damage: +%
+text	=	傷害: +%
 ID	=	029
 
-[# increased Monster Movement Speed|# increased Monster Attack Speed|# increased Monster Cast Speed]
+[增加 # 怪物移動速度|增加 # 怪物攻擊速度|增加 # 怪物施放速度]
 type	=	monsters
-text	=	speed: +%
+text	=	速度: +%
 ID	=	030
 
-[Monsters have # increased Critical Hit Chance|# to Monster Critical Damage Bonus]
+[M怪物增加 # 暴擊率|# 怪物暴擊加成]
 type	=	monsters
-text	=	crit/multi: +%
+text	=	暴擊/暴傷: +%
 ID	=	031
 
-[# more Monster Life]
+[# 更多怪物生命]
 type	=	monsters
-text	=	more life: %
+text	=	生命: %
 ID	=	032
 
-[# Monster Elemental Resistances]
+[# 怪物的元素抗性]
 type	=	monsters
-text	=	ele res: +%
+text	=	元素抗性: +%
 ID	=	033
 
-[Monsters are Armoured]
+[怪物為裝甲]
 type	=	monsters
-text	=	extra armor
+text	=	額外護甲
 ID	=	034
 
-[Monsters are Evasive]
+[怪物為閃避]
 type	=	monsters
-text	=	extra evasion
+text	=	額外閃避值
 ID	=	035
 
-[Monsters gain # of Maximum Life as Extra Maximum Energy Shield]
+[怪物獲得 # 最大生命的額外最大能量護盾]
 type	=	monsters
-text	=	life as extra es: %
+text	=	生命額外護盾: %
 ID	=	036
 
-[Monsters have # chance to Poison on Hit]
+[怪物有 # 機率在擊中時引起中毒]
 type	=	monsters
-text	=	poison chance: %
+text	=	中毒機率: %
 ID	=	037
 
-[Monsters have # chance to Bleed on Hit]
+[怪物有 # 機率在擊中時引起流血]
 type	=	monsters
-text	=	bleed chance: %
+text	=	流血機率: %
 ID	=	038
 
-[Monsters have # increased Ailment Threshold|Monsters have # increased Stun Threshold]
+[怪物異常狀態門檻增加 #|怪物的暈眩門檻增加 #]
 type	=	monsters
-text	=	stun/ailm res: +%
+text	=	暈眩/異常狀態門檻: +%
 ID	=	039
 
-[Monsters Break Armour equal to # of Physical Damage dealt]
+[怪物破壞的護甲值相當於造成的 # 物理傷害]
 type	=	monsters
-text	=	armor break: %
+text	=	護甲破壞: %
 ID	=	040
 
-[Monsters have # increased Accuracy Rating]
+[怪物增加 # 命中值]
 type	=	monsters
-text	=	inc accuracy: %
+text	=	命中值: +%
 ID	=	041
 
-[Monsters deal # of Damage as Extra Chaos]
+[怪物造成相當於傷害 # 的額外混沌傷害]
 type	=	monsters
-text	=	extra chaos dmg: +%
+text	=	混亂傷害: +%
 ID	=	042
 
-[Monsters have # increased Stun Buildup]
+[怪物的暈眩累積增加 #]
 type	=	monsters
-text	=	inc stun: +%
+text	=	暈眩累積: +%
 ID	=	043
 
-[Monsters have # increased Freeze Buildup|Monsters have # increased Ignite Chance|Monsters have # increased Shock Chance]
+[怪物的冰凍累積增加 #|怪物的點燃機率增加 #|怪物的感電機率增加 #]
 type	=	monsters
-text	=	freeze/ignite/shock: +%
+text	=	冰凍/點燃/感電概率: +%
 ID	=	044
 
-[Monsters fire # additional Projectiles]
+[怪物發射 # 額外投射物]
 type	=	monsters
-text	=	extra proj: +
+text	=	投射物: +%
 ID	=	045
 
-[Monsters have # increased Area of Effect]
+[增加怪物 # 範圍效果]
 type	=	monsters
-text	=	area of effect: +%
+text	=	範圍效果: +%
 ID	=	046
 
 [Area is Cursed with Enfeeble]
@@ -295,90 +295,90 @@ type	=	area
 text	=	ele weakness
 ID	=	049
 
-[Area has patches of Ignited Ground]
+[區域內有多個點燃地面]
 type	=	area
-text	=	burning ground
+text	=	燃燒地面
 ID	=	050
 
-[Area has patches of Chilled Ground]
+[地圖含有冰緩地面]
 type	=	area
-text	=	chilled ground
+text	=	冰凍地面
 ID	=	051
 
-[Area has patches of Shocked Ground]
+[區域內有數道感電地面]
 type	=	area
-text	=	shocked ground
+text	=	感電地面
 ID	=	052
 
-[Monster Damage Penetrates # Elemental Resistances]
+[怪物傷害穿透 # 元素抗性]
 type	=	monsters
-text	=	ele pen: %
+text	=	抗性穿透: -%
 ID	=	053
 
-[# maximum Player Resistances]
+[玩家 # 最大抗性]
 type	=	player
 text	=	max res: -%
 ID	=	054
 
-[Players gain # reduced Flask Charges]
+[玩家獲得的藥劑充能減少 #]
 type	=	player
-text	=	flask charges: -%
+text	=	藥劑充能: -%
 ID	=	055
 
-[Players have # less Recovery Rate of Life and Energy Shield]
+[玩家有 # 更少生命和能量護盾恢復率]
 type	=	player
-text	=	less recovery: %
+text	=	生命/護盾恢復率: -%
 ID	=	056
 
-[Players have # less Cooldown Recovery Rate]
+[玩家有 # 更少冷卻時間恢復速度]
 type	=	player
-text	=	less cdr: %
+text	=	冷卻時間恢復: -%
 ID	=	057
 
-[Monsters take # reduced Extra Damage from Critical Hits]
+[減少 # 怪物承受的暴擊傷害]
 type	=	monsters
-text	=	crit res: +%
+text	=	暴擊抗性: +%
 ID	=	058
 
-[less effect of Curses on Monsters]
+[怪物身上的詛咒具有 # 更少效果]
 type	=	player
-text	=	less curse effect: %
+text	=	詛咒效果: -%
 ID	=	059
 
-[Monsters have # chance to steal Power, Frenzy and Endurance charges on Hit]
+[怪物擊中時有 # 機率偷取暴擊、狂怒和耐力球]
 type	=	monsters
-text	=	steal charges: %
+text	=	竊取充能: %
 ID	=	060
 
 
 ;## ID 2XX for delirium mods
 
-[Players in Area are # Delirious]
+[區域中玩家的譫妄為 #]
 type	=	player
 text	=	delirious: %
 ID	=	201
 
-[# increased Waystones found in Area]
+[在地區裡找到的換界石增加 #]
 type	=	area
-text	=	waystones: +%
+text	=	換界石: +%
 ID	=	202
 
-[# increased Precursor Tablets found in Area]
+[區域中找到的先行者碑牌增加 #]
 type	=	area
 text	=	tablets: +%
 ID	=	203
 
-[# increased Stack size of Simulacrum Splinters found in Area]
+[區域中所發現幻像斷片的堆疊大小增加 #]
 type	=	area
 text	=	splinters: +%
 ID	=	204
 
-[Rare Monsters have a # chance to have an additional Modifier]
+[稀有怪物有 # 機率有 1 個額外詞綴]
 type	=	monsters
 text	=	extra mod on rares: +%
 ID	=	205
 
-[Unique Monsters have # additional Modifier]
+[傳奇怪物會擁有 # 個額外的詞綴]
 type	=	monsters
 text	=	mods on uniques: +
 ID	=	206

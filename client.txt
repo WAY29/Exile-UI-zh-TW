@@ -259,12 +259,12 @@
 ;## NOTE: it's possible that there's a difference in the ALT-CTRL-C text and the easier-to-find text (e.g. German tooltips display "ss" whenever the ALT-CTRL-C text contains "ß"), so be aware of that if the target language has such variations
 
 ;## these strings are the item-names of certain items (top of the in-game tooltip)
-		items_waystone			=	"地圖鑰匙"						;## PoE2 only (whole block)
-		items_soul_core			=	"靈魂核心"
-		items_talisman			=	"護符"
-		items_uncut_gem			=	"未切割的技能寶石"
-		items_uncut_gem			=	"未切割的輔助寶石"
-		items_uncut_gem			=	"精魂寶石"
+		items_waystone			=	"Waystone"						;## PoE2 only (whole block)
+		items_soul_core			=	"Soul Core of"
+		items_talisman			=	"Talisman"
+		items_uncut_gem			=	"Uncut Skill Gem"
+		items_uncut_gem			=	"Uncut Support Gem"
+		items_uncut_gem			=	"Uncut Spirit Gem"
 
 ;## these strings are displayed in the in-game tooltip when hovering over an item
 		items_unidentified		=	"未鑑定"						;## PoE1 and PoE2 (whole block)
