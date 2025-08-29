@@ -235,429 +235,428 @@
       "visualizes how your in-/outflow developed over the course of a specific day and the past week"
     ],
     "hotkeys ingame-keybinds": [
-      "在游戏内按键绑定和脚本热键之间避免冲突\n- 勾选适用于您的任何内容\n- 当被要求时提供替代键"
+      "在遊戲內按鍵綁定和腳本熱鍵之間避免衝突\n- 勾選適用於您的任何內容\n- 當被要求時提供替代鍵"
     ],
     "hotkeys movekey": [
-      "只有当使用鼠标移动时才需要",
-      "指定键允许脚本在某些情况下适应其行为",
-      "示例: 在移动角色时不激活悬停覆盖层",
-      "对于特殊键，请检查上面的链接以找到适当的名称和格式"
+      "只有當使用鼠標移動時才需要",
+      "指定鍵允許腳本在某些情況下適應其行為",
+      "示例: 在移動角色時不激活懸停覆蓋層",
+      "對於特殊鍵，請檢查上面的鏈接以找到適當的名稱和格式"
     ],
     "hotkeys omnikey-info": [
-      "上下文敏感热键，激活脚本的大部分功能",
-      "而不是为每个功能指定热键，您校准屏幕检查以帮助此热键解释在按下时哪个功能必须激活",
-      "它不会阻止绑定到它的游戏动作"
-
+      "上下文敏感熱鍵，激活腳本的大部分功能",
+      "而不是為每個功能指定熱鍵，您校準屏幕檢查以幫助此熱鍵解釋在按下時哪個功能必須激活",
+      "它不會阻止綁定到它的遊戲動作"
     ],
     "hotkeys omnikey": [
-      "如果您想将 <omni-key> 移动到不同的键，请在编辑字段中指定它",
-      "由于热键使用频繁，我强烈建议避免按键组合",
-      "不要将其绑定到修饰键或用于聊天的键，否则功能可能会随机激活",
-      "对于特殊键，请检查上面的链接以找到适当的名称和格式"
+      "如果您想將 <omni-key> 移動到不同的鍵，請在編輯字段中指定它",
+      "由於熱鍵使用頻繁，我強烈建議避免按鍵組合",
+      "不要將其綁定到修飾鍵或用於聊天的鍵，否則功能可能會隨機激活",
+      "對於特殊鍵，請檢查上面的鏈接以找到適當的名稱和格式"
     ],
     "hotkeys omnikey2": [
-      "由于一个游戏漏洞（Bug），直接改动 C 键会导致功能异常。因此，你需要将物品的使用/交互指定到一个新增的万能键上",
-      "每当一个功能需要您 omni-点击 一个物品时，您必须使用这个万能键",
-      "对于特殊键，请检查上面的链接以找到适当的名称和格式"
+      "由於一個遊戲漏洞（Bug），直接改動 C 鍵會導致功能異常。因此，你需要將物品的使用/交互指定到一個新增的萬能鍵上",
+      "每當一個功能需要您 omni-點擊 一個物品時，您必須使用這個萬能鍵",
+      "對於特殊鍵，請檢查上面的鏈接以找到適當的名稱和格式"
     ],
     "hotkeys omniblock": [
-      "当游戏客户端或脚本处于焦点时，按键只会被脚本注册，而不会被系统其他部分注册",
-      "只有脚本功能会通过按键激活，特殊键(如 Windows 或 accent 键、capslock 等)可以正常使用，不会产生通常的副作用"
+      "當遊戲客戶端或腳本處於焦點時，按鍵只會被腳本註冊，而不会被系統其他部分註冊",
+      "只有腳本功能會通過按鍵激活，特殊鍵(如 Windows 或 accent 鍵、capslock 等)可以正常使用，不會産生通常的副作用"
     ],
     "hotkeys altkey": [
-      "在编辑字段中指定替代键",
-      "对于特殊键，请检查上面的链接以找到适当的名称和格式"
+      "在編輯字段中指定替代鍵",
+      "對於特殊鍵，請檢查上面的鏈接以找到適當的名稱和格式"
     ],
     "hotkeys tab": [
-      "这个热键(重新)激活某些小部件和非永久性覆盖层",
-      "如果游戏中的某些内容绑定到 <tab> 并需要按住(例如技能、移动)，您必须在编辑字段中指定替代键",
-      "工具提示将把它称为 <tab>，即使重新绑定"
+      "這個熱鍵(重新)激活某些小部件和非永久性覆蓋層",
+      "如果遊戲中的某些內容綁定到 <tab> 並需要按住(例如技能、移動)，您必須在編輯字段中指定替代鍵",
+      "工具提示將把它稱為 <tab>，即使重新綁定"
     ],
     "hotkeys restart": [
-      "如果脚本崩溃并停止响应，请使用此组合重新启动它"
+      "如果腳本崩潰並停止響應，請使用此組合重新啟動它"
     ],
     "iteminfo enable": [
-      "提供了一个可定制的物品工具提示，为您拾取的战利品添加了查看价值",
-      "悬停时按住 <omni-key> 激活它: 如果已经激活，简单的 omni-点击将再次激活/刷新它",
-      "点击进入游戏或按 <esc> 关闭它",
-      "需要正确设置 <inventory> 像素检查(/highlight)"
+      "提供了一個可定制的物品工具提示，為您拾取的戰利品添加了查看價值",
+      "懸停時按住 <omni-key> 激活它: 如果已經激活，簡單的 omni-點擊將再次激活/刷新它",
+      "點擊進入遊戲或按 <esc> 關閉它",
+      "需要正確設置 <inventory> 像素檢查(/highlight)"
     ],
     "iteminfo profiles": [
-      "自定义高亮可以保存在单独的配置文件中",
-      "如果工具提示在选择配置文件时在屏幕上，更改将立即应用"
+      "自定義高亮可以保存在單獨的配置文件中",
+      "如果工具提示在選擇配置文件時在屏幕上，更改將立即應用"
     ],
     "iteminfo reset": [
-      "长按一个按钮重置当前配置文件中的特定高亮"
+      "長按一個按鈕重置當前配置文件中的特定高亮"
     ],
     "iteminfo <omni-key>": [
-      "悬停时按住 <omni-key> 激活工具提示: 如果已经激活，简单的 omni-点击将再次激活/刷新它",
-      "点击进入游戏或按 <esc> 关闭它"
+      "懸停時按住 <omni-key> 激活工具提示: 如果已經激活，簡單的 omni-點擊將再次激活/刷新它",
+      "點擊進入遊戲或按 <esc> 關閉它"
     ],
     "iteminfo alt-key": [
-      "悬停时按住 <alt> 激活工具提示: 当您释放 <alt> 时，工具提示将自动关闭",
-      "如果您只想访问游戏中的高级工具提示，请在按住 <alt> 之前按住 <ctrl>",
-      "此设置可能会干扰其他第三方工具(/highlight)"
+      "懸停時按住 <alt> 激活工具提示: 當您釋放 <alt> 時，工具提示將自動關閉",
+      "如果您只想訪問遊戲中的高級工具提示，請在按住 <alt> 之前按住 <ctrl>",
+      "此設置可能會干擾其他第三方工具(/highlight)"
     ],
     "iteminfo modrolls": [
-      "隐藏显式 mod 的 min/max 范围",
+      "隱藏顯式 mod 的 最小/最大 範圍",
       "+89 到最大生命值\nvs.\n+89(80-89) 到最大生命值"
     ],
     "iteminfo modbars tier": [
-      "mod-文本和条形图上的 roll-范围将代表当前 tier 内的 roll，即神殿宝珠范围",
-      "示例，t2 移动速度:\n30% 增加移动速度"
+      "mod-文本和條形圖上的 roll-範圍將代表當前 tier 內的 roll",
+      "示例，t2 移動速度:\n30% 增加移動速度"
     ],
     "iteminfo modbars global": [
-      "mod-文本和条形图上的 roll-范围将代表全局范围内的 roll，即从最差到最好可能的 roll",
-      "示例，t2 移动速度:\n30%(10-35) 增加移动速度"
+      "mod-文本和條形圖上的 roll-範圍將代表全局範圍內的 roll，即從最差到最好可能的 roll",
+      "示例，t2 移動速度:\n30%(10-35) 增加移動速度"
     ],
     "iteminfo modbars ilevel": [
-      "mod-文本和条形图上的 roll-范围将代表 ilvl 范围内的 roll，即从最差到最好可能的 roll",
-      "示例，t2 移动速度 on ilvl 74 靴子:\n30%(10-30) 增加移动速度"
+      "mod-文本和條形圖上的 roll-範圍將代表 ilvl 範圍內的 roll，即從最差到最好可能的 roll",
+      "示例，物品等級 74 靴子的 t2 移動速度:\n30%(10-30) 增加移動速度"
     ],
     "iteminfo quality scaling": [
-      "在应用品质和更大铁符文后，在底部显示额外的防御/伤害值",
-      "这可以用于预览制作/拾取物品的理论最大值"
+      "應用品質和更好的符文後，在底部顯示額外的防禦-傷害值",
+      "這可以用于預覽製作/拾取物品的理論最大值"
     ],
     "iteminfo shift-click": [
-      "通过 shift-click 应用货币到物品时，自动刷新/激活工具提示",
-      "您必须先按住 <shift>，右键点击货币，然后点击物品"
+      "通過 shift-click 應用貨幣到物品時，自動刷新-激活工具提示",
+      "您必須先按住 <shift>，右鍵點擊貨幣，然後點擊物品"
     ],
     "iteminfo league-start": [
-      "添加一个部分，其中物品的统计数据与您的当前装备进行比较",
-      "这个部分取代了基础统计数据部分"
+      "添加一個部分，其中物品的統計數據與您的當前裝備進行比較",
+      "這個部分取代了基礎統計數據部分"
     ],
     "iteminfo affix-info icon": [
-      "最后一列将显示一个 词缀 的 mod-group 的图标(如果可用)"
+      "最後一列將顯示一個 詞綴 的 mod-group 的圖標(如果可用)"
     ],
     "iteminfo affix-info ilvl": [
-      "最后一列将显示每个 词缀 的 ilvl 要求，这暴露了高 tier 但低 ilvl 的 mod",
-      "这个选项更面向高级用户，因为它添加了更多信息"
+      "最後一列將顯示每個 詞綴 的 物品等級 要求，這暴露了高 階級 但低 物品等級 的 mod",
+      "這個選項更面向高級用戶，因爲它添加了更多信息"
     ],
     "iteminfo affix-info max tier": [
-      "最后一列将显示物品当前等级的最大词缀阶级",
-      "这可以用于检查 词缀 与 物品等级 限制的最大阶级有多接近"
+      "最後一列將顯示物品當前等級的最大詞綴階級",
+      "這可以用於檢查 詞綴 與 物品等級 限制的最大階級有多接近"
     ],
     "iteminfo affix-info off": [
-      "最后一列不显示任何关于 词缀 的信息"
+      "最後一列不顯示任何關於 詞綴 的信息"
     ],
     "iteminfo base-info": [
-      "adds a section that shows how the item's stats compare to the best-in-class stats",
-      "it also shows the base-percentile roll and ilvl, highlighting good values"
+      "添加一個部分，顯示物品的統計數據與最佳統計數據的比較",
+      "它還顯示基礎百分位 roll 和 物品等級，突出顯示好的值"
     ],
     "iteminfo base-info 2": [
-      "adds a section that shows how the item's stats compare to the best-in-class stats"
+      "添加一個部分，顯示物品的統計數據與最佳統計數據的比較"
     ],
     "iteminfo marking global": [
-      "colors used to highlight globally (un)desired mods",
-      "click a box to open the color-palette, right click to reset"
+      "用於全局突出顯示 (un)desired mods 的顏色",
+      "點擊一個框以打開顏色調色板，右鍵點擊以重置"
     ],
     "iteminfo marking class": [
-      "colors used to highlight class-specifically (un)desired mods",
-      "click a box to open the color-palette, right click to reset"
+      "用於突出顯示類別特定的 (un)desired mods 的顏色",
+      "點擊一個框以打開顏色調色板，右鍵點擊以重置"
     ],
     "iteminfo item-tier": [
-      "click a box to open the color-palette, right click to reset",
-      "<fr> refers to fractured, <#> to untiered mods"
+      "點擊一個框以打開顏色調色板，右鍵點擊以重置",
+      "<fr> 指的是破碎的，<#> 指的是未分級的 mod"
     ],
     "iteminfo item-tier 2": [
-      "click a box to open the color-palette, right click to reset",
-      "<fr> refers to fractured, <#> to untiered mods",
-      "note: poe2 tiers will be normalized / recalculated so that the best available mod on an item is t1 again. if that fails, highlighting will not be applied and the in-game tier will be displayed"
+      "點擊一個框以打開顏色調色板，右鍵點擊以重置",
+      "<fr> 指的是破碎的，<#> 指的是未分級的 mod",
+      "注意: poe2 階級將被規範化/重新計算，以便物品上最好的可用 mod 再次成為 t1。如果失敗，將不會應用突出顯示，並顯示遊戲內的階級"
     ],
     "iteminfo item-level": [
-      "click a box to open the color-palette, right click to reset"
+      "點擊一個框以打開顏色調色板，右鍵點擊以重置"
     ],
     "iteminfo override": [
-      "tiers/ilvl on undesired mods (except fractured) will be highlighted by the <undesired> color instead of the usual color",
-      "this will also hide the last column on undesired mods to improve visual clarity"
+      "遊戲內的階級將被 <undesired> 顏色突出顯示，而不是通常的顏色",
+      "這也將隱藏 <undesired> 的 mod 的最後一列，以提高視覺清晰度"
     ],
     "iteminfo rules": [
-      "single-click solution to mark larger mod groups as (un)desired",
-      "the name specifies which mods are affected, the color whether they'll be set to (un)desired"
+      "單擊解決方案來標記更大的 mod 組為 (un)desired",
+      "名稱指定哪些 mod 受影響，顏色決定它們將被設置為 (un)desired"
     ],
     "lang unavailable": [
-      "this feature is currently not available on non-english clients"
+      "此功能目前對非英語客戶端不可用"
     ],
     "lang incompatible": [
-      "this feature is not available on clients with an unsupported language",
-      "it will be available once a language-pack for the current language has been installed"
+      "此功能對於不支持的語言的客戶端不可用",
+      "一旦安裝了當前語言的語言包，它將可用"
     ],
     "leveltracker enable": [
-      "提供自动剧情引导覆盖层和一些 QOL 功能"
+      "提供自動劇情導航覆蓋層和一些 QOL 功能"
     ],
     "leveltracker timer": [
-      "在引导文本和导航按钮之间添加一个计时器，记录您的行动时间并存储在 csv 文件中",
-      "计时器结构:\ntotal time | act # | current act time",
-      "点击 <act #> 暂停/恢复计时器\n(当挂机 10 秒以上时会自动暂停)",
-      "如何重置: 在第一个区域或城镇，长按右键点击 <act #>"
+      "在導航文本和導航按鈕之間添加一個計時器，記錄您的行動時間並存儲在 csv 文件中",
+      "計時器結構:\ntotal time | act # | current act time",
+      "點擊 <act #> 暫停/恢復計時器\n(當掛機 10 秒以上時會自動暫停)",
+      "如何重置: 在第一個區域或城鎮，長按右鍵點擊 <act #>"
     ],
     "leveltracker timer-pause": [
-      "在藏身处自动暂停计时器，当你离开时恢复"
+      "在藏身處自動暫停計時器，當你離開時恢復"
     ],
     "leveltracker fade-timer": [
-      "在延迟后自动隐藏覆盖层(除了在城镇时)",
-      "延迟: 切换引导页面后 x 秒",
-      "每当切换页面时，覆盖层将再次显示并重新启动延迟",
-      "当按住 <tab> 时也会显示"
+      "在延遲後自動隱藏覆蓋層(除了在城鎮時)",
+      "延遲: 切換導航頁面後 x 秒",
+      "每當切換頁面時，覆蓋層將再次顯示並重新啟動延遲",
+      "當按住 <tab> 時也會顯示"
     ],
     "leveltracker fade mouse": [
-      "当光标悬停在以前的区域时，覆盖层将显示",
-      "当按住移动键时没有效果(可在热键部分自定义)"
+      "當光標懸停在以前的區域時，覆蓋層將顯示",
+      "當按住移動鍵時沒有效果(可在熱鍵部分自定義)"
     ],
     "leveltracker recommendation": [
-      "包括一些区域或boss战的等级推荐"
+      "包括一些區域或boss戰的等級推薦"
     ],
     "leveltracker geartracker": [
-      "通知您何时可以装备新装备(指南按钮将显示绿色数字)",
-      "需要您的角色名称在 <general> 设置中(/highlight)",
-      "通过右键点击工具栏中的指南按钮访问",
-      "当面板打开时，按住 <omni-key> 点击物品以添加到列表"
+      "通知您何時可以裝備新裝備(指南按鈕將顯示綠色數字)",
+      "需要您的角色名稱在 <general> 設置中(/highlight)",
+      "通過右鍵點擊工具欄中的指南按鈕訪問",
+      "當面板打開時，按住 <omni-key> 點擊物品以添加到列表"
     ],
     "leveltracker expbar": [
-      "稍微向上移动指南覆盖层，使其不覆盖经验条"
+      "稍微向上移動導航覆蓋層，使其不覆蓋經驗條"
     ],
     "leveltracker skilltree-info": [
-      "当悬停在宝石上时，按住 <omni-key> 显示带有宝石设置/链接的覆盖层",
-      "需要正确设置 <inventory> 像素检查，在 <screen-checks> 菜单中(/highlight)",
+      "當懸停在寶石上時，按住 <omni-key> 顯示帶有寶石設置/鏈接的覆蓋層",
+      "需要正確設置 <inventory> 像素檢查，在 <screen-checks> 菜單中(/highlight)",
       "",
-      "当技能树在屏幕上时，按住 <tab> 显示带有技能树图纸的覆盖层",
-      "需要正确设置 <skilltree> 图像检查，在 <screen-checks> 菜单中(/highlight)"
+      "當技能樹在屏幕上時，按住 <tab> 顯示帶有技能樹圖紙的覆蓋層",
+      "需要正確設置 <skilltree> 圖像檢查，在 <screen-checks> 菜單中(/highlight)"
     ],
     "leveltracker skilltree clear": [
-      "长按删除用于渲染图纸的技能树文件: 它们将在下次需要时重新下载",
-      "只有在图纸过期或不正确时才需要删除它们"
+      "長按刪除用於渲染圖紙的技能樹文件: 它們將在下次需要時重新下載",
+      "只有在圖紙過期或不正確時才需要刪除它們"
     ],
     "leveltracker pob gems": [
-      "宝石覆盖层将在释放 <omni-key> 后继续显示，直到您按下 <esc>",
-      "此选项还允许覆盖层通过长按宝石名称在列表中移动",
-      "点击列表中的宝石名称将启动游戏内搜索该宝石"
+      "寶石覆蓋層將在釋放 <omni-key> 後繼續顯示，直到您按下 <esc>",
+      "此選項還允許覆蓋層通過長按寶石名稱在列表中移動",
+      "點擊列表中的寶石名稱將啟動遊戲內搜索該寶石"
     ],
     "leveltracker pob manual": [
-      "技能树覆盖层将使用手动屏幕截图而不是从 pob 的数据渲染的图纸",
-      "此选项还更改了如何访问覆盖层: 当技能树在屏幕上时，按住 <omni-key>"
+      "技能樹覆蓋層將使用手動屏幕截圖而不是從 pob 的數據渲染的圖紙",
+      "此選項還更改了如何訪問覆蓋層: 當技能樹在屏幕上時，按住 <omni-key>"
     ],
     "leveltracker pob": [
-      "鼠标中间在 pob 中将打开屏幕截图菜单",
-      "使用此菜单管理覆盖层图像"
+      "鼠標中間在 pob 中將打開屏幕截圖菜單",
+      "使用此菜單管理覆蓋層圖像"
     ],
     "leveltracker screen-cap menu": [
-      "打开屏幕截图菜单",
-      "使用此菜单管理覆盖层图像"
+      "打開屏幕截圖菜單",
+      "使用此菜單管理覆蓋層圖像"
     ],
     "leveltracker folder": [
-      "打开包含覆盖层图像的文件夹",
-      "如果您想自己编辑图像，可以手动将它们移动到此文件夹"
+      "打開包含覆蓋層圖像的文件夾",
+      "如果您想自己編輯圖像，可以手動將它們移動到此文件夾"
     ],
     "leveltracker profile create": [
-      "点击添加一个指南槽"
+      "點擊添加一個指南槽"
     ],
     "leveltracker profile select": [
-      "点击激活此指南槽",
-      "长按右键删除此指南槽"
+      "點擊激活此指南槽",
+      "長按右鍵刪除此指南槽"
     ],
     "leveltracker import": [
-      "从剪贴板导入 pobb.in-links、pob-codes 或自定义指南到此指南槽",
-      "导入将重置您的进度:\n您可以长按指南覆盖层中的 > 按钮以重新同步指南到您当前所在的区域(/highlight)"
+      "從剪貼板導入 pobb.in-links、pob-codes 或自定義指南到此指南槽",
+      "導入將重置您的進度:\n您可以長按指南覆蓋層中的 > 按鈕以重新同步指南到您當前所在的區域(/highlight)"
     ],
     "leveltracker editor": [
-      "打开编辑器以编辑此槽中的指南"
+      "打開編輯器以編輯此槽中的指南"
     ],
     "leveltracker guide info": [
-      "您最多可以使用和切换九个单独的指南槽",
-      "每个槽都有自己的数据: 指南 & 进度、装备、技能树、计时器",
-      "信用: 默认指南最初由 heartofphos 的 exile-leveling 派生"
+      "您最多可以使用和切換九個單獨的指南槽",
+      "每個槽都有自己的數據: 指南 & 進度、裝備、技能樹、計時器",
+      "信用: 默認指南最初由 heartofphos 的 exile-leveling 派生"
     ],
     "leveltracker gems": [
-      "右键点击打开宝石拾取配置:\n在剧情中何时/是否拾取特定宝石",
-      "点击切换宝石任务是否应包含在指南中(减少回溯和 NPC 交互)",
-      "on: 您通过任务拾取宝石\noff: 您单独购买宝石(莉莉/交易)",
-      "如果 <league-start> 为 on，则此切换强制为 on (/highlight)"
+      "右鍵點擊打開寶石拾取配置:\n在劇情中何時/是否拾取特定寶石",
+      "點擊切換寶石任務是否應包含在指南中(減少回溯和 NPC 交互)",
+      "on: 您通過任務拾取寶石\noff: 您單獨購買寶石(莉莉/交易)",
+      "如果 <league-start> 為 on，則此切換強制為 on (/highlight)"
     ],
     "leveltracker guide info 2": [
-      "您最多可以使用和切换九个单独的指南槽",
-      "每个槽都有自己的数据: 指南 & 进度、装备、技能树、计时器",
-      "信用: 默认指南最初由 u/xebtria 的 quick-guide 派生"
+      "您最多可以使用和切換九個單獨的指南槽",
+      "每個槽都有自己的數據: 指南 & 進度、裝備、技能樹、計時器",
+      "信用: 默認指南最初由 u/xebtria 的 quick-guide 派生"
     ],
     "leveltracker guide format info": [
-      "每行有一个或多个您需要完成的步骤",
-      "(hint)__ 缩进的行提供有关上一步的更多信息",
+      "每行有一個或多個您需要完成的步驟",
+      "(hint)__ 縮進的行提供有關上一步的更多信息",
       "(hint)__",
-      "可选: 标记为加号的行显示可选步骤",
-      "(hint)__ 它们可以通过 (quest:optionals) 切换启用/禁用",
+      "可選: 標記為加號的行顯示可選步驟",
+      "(hint)__ 它們可以通過 (quest:optionals) 切換啟用/禁用",
       "(hint)__",
-      "当交任务时，(img:skip) 表示 NPC 有排队任务",
-      "(hint)__ 这些没有相关奖励，可以跳过",
+      "當交任務時，(img:skip) 表示 NPC 有排隊任務",
+      "(hint)__ 這些沒有相關獎勵，可以跳過",
       "(hint)__",
       "如果有一 (img:craft) 或 (color:00FFFF)this_highlighting, 按住 <tab> 查看更多信息",
       "(hint)__",
-      "(img:0), (img:2): 这些显示主要方向，即北、东等",
-      "(hint)__ 直接路径有时可能会被阻塞(您需要绕道而行)"
+      "(img:0), (img:2): 這些顯示主要方向，即北、東等",
+      "(hint)__ 直接路徑有時可能會被阻塞(您需要繞道而行)"
     ],
     "leveltracker guide format info 2": [
-      "每行有一个或多个您需要完成的步骤",
-      "(hint)__ 缩进的行提供有关上一步的更多信息",
+      "每行有一個或多個您需要完成的步驟",
+      "(hint)__ 縮進的行提供有關上一步的更多信息",
       "(hint)__",
-      "(color:FF00FF)x_tasks: 一些行有 x 个子任务您需要完成",
-      "(hint)__ 它们可以按随机顺序或同时完成(区域依赖)",
+      "(color:FF00FF)x_tasks: 一些行有 x 個子任務您需要完成",
+      "(hint)__ 它們可以按隨機順序或同時完成(區域依賴)",
       "(hint)__",
-      "可选: 标记为加号的行显示可选步骤",
-      "(hint)__ 它们可以通过 (quest:optionals) 切换启用/禁用",
+      "可選: 標記為加號的行顯示可選步驟",
+      "(hint)__ 它們可以通過 (quest:optionals) 切換啟用/禁用",
       "(hint)__",
-      "如果文本是 (color:00FFFF)highlighted_like_this, 按住 <tab> 查看图像",
+      "如果文本是 (color:00FFFF)highlighted_like_this, 按住 <tab> 查看圖像",
       "(hint)__",
-      "(img:in-out) (img:arena) (color:AAAAAA)zone-name for x: 这意味着 \"进入 (color:AAAAAA)zone 获取 x, 然后离开\"",
+      "(img:in-out) (img:arena) (color:AAAAAA)zone-name for x: 這意味著 \"進入 (color:AAAAAA)zone 獲取 x, 然後離開\"",
       "(hint)__",
-      "(img:0), (img:2): 这些显示主要方向，即北、东等",
-      "(hint)__ 直接路径有时可能会被阻塞(您需要绕道而行)",
+      "(img:0), (img:2): 這些顯示主要方向，即北、東等",
+      "(hint)__ 直接路徑有時可能會被阻塞(您需要繞道而行)",
       "(hint)__",
-      "\"xyz (map)\" 表示在迷你地图上标记了一个兴趣点"
+      "\"xyz (map)\" 表示在迷你地圖上標記了一個興趣點"
     ],
     "leveltracker leaguestart": [
-      "选择是否显示每个联盟只需完成一次的任务/目标(例如实验室试炼、制作配方)",
-      "如果存在带有宝石的 pob 导入并且 league-start 被禁用，一些宝石任务可能会被藏身处莉莉代替",
-      "切换此设置将重置您的进度:\n您可以长按指南覆盖层中的 > 按钮以重新同步指南到您当前所在的区域(/highlight)"
+      "選擇是否顯示每個聯盟只需完成一次的任務/目標(例如實驗室試煉、製作配方)",
+      "如果存在帶有寶石的 pob 導入並且 league-start 被禁用，一些寶石任務可能會被藏身處莉莉代替",
+      "切換此設置將重置您的進度:\n您可以長按指南覆蓋層中的 > 按鈕以重新同步指南到您當前所在的區域(/highlight)"
     ],
     "leveltracker bandit": [
-      "选择您在第二幕中想要帮助的强盗",
-      "切换此设置将重置您的进度:\n您可以长按指南覆盖层中的 > 按钮以重新同步指南到您当前所在的区域(/highlight)"
+      "選擇您在第二幕中想要幫助的強盜",
+      "切換此設置將重置您的進度:\n您可以長按指南覆蓋層中的 > 按鈕以重新同步指南到您當前所在的區域(/highlight)"
     ],
     "leveltracker leaguestart 2": [
-      "选择是否显示每个联盟只需完成一次的任务/目标",
-      "切换此设置将重置您的进度:\n您可以长按指南覆盖层中的 > 按钮以重新同步指南到您当前所在的区域(/highlight)"
+      "選擇是否顯示每個聯盟只需完成一次的任務/目標",
+      "切換此設置將重置您的進度:\n您可以長按指南覆蓋層中的 > 按鈕以重新同步指南到您當前所在的區域(/highlight)"
     ],
     "leveltracker optionals": [
-      "选择是否显示可选战利品/任务/遭遇",
-      "它们将在指南中标记为加号(/highlight)",
-      "示例: 宝箱、装备任务"
+      "選擇是否顯示可選戰利品/任務/遭遇",
+      "它們將在指南中標記為加號(/highlight)",
+      "示例: 寶箱、裝備任務"
     ],
     "leveltracker optionals 2": [
-      "选择是否显示可选战利品/任务",
-      "它们将在指南中标记为加号(/highlight)",
-      "示例: 奥术师之球、宝石、珠宝、药剂"
+      "選擇是否顯示可選戰利品/任務",
+      "它們將在指南中標記為加號(/highlight)",
+      "示例: 奧術師之球、寶石、珠寶、藥劑"
     ],
     "leveltracker reset": [
-      "长按重置此指南槽中的进度并重新开始"
+      "長按重置此指南槽中的進度並重新開始"
     ],
     "leveltracker character info": [
-      "可选: 输入您在使用此指南时将扮演的角色名称",
-      "这启用等级跟踪和 e-exp 计算",
-      "此名称也将应用于 <general> 选项卡，即此角色将全局跟踪(/highlight)"
+      "可選: 輸入您在使用此指南時將扮演的角色名稱",
+      "這啟用等級跟踪和 e-exp 計算",
+      "此名稱也將應用於 <general> 選項卡，即此角色將全局跟踪(/highlight)"
     ],
     "leveltracker character status": [
-      "橙色: 未指定名称",
-      "黄色: 角色未找到 / 需要刷新",
-      "绿色: 角色找到，跟踪活动"
+      "橙色: 未指定名稱",
+      "黃色: 角色未找到 / 需要刷新",
+      "綠色: 角色找到，跟踪活動"
     ],
     "leveltracker profile name": [
-      "可选: 输入您在使用此指南时将扮演的角色名称",
-      "这启用等级跟踪和 e-exp 计算",
-      "此名称也将应用于 <general> 选项卡，即此角色将全局跟踪(/highlight)"
+      "可選: 輸入您在使用此指南時將扮演的角色名稱",
+      "這啟用等級跟踪和 e-exp 計算",
+      "此名稱也將應用於 <general> 選項卡，即此角色將全局跟踪(/highlight)"
     ],
     "leveltracker pob preview": [
-      "长按检查可用 pob 数据",
-      "长按右键删除 pob 数据"
+      "長按檢查可用 pob 數據",
+      "長按右鍵刪除 pob 數據"
     ],
     "leveltracker hotkeys enable": [
-      "允许您通过可自定义的热键切换指南页面"
+      "允許您通過可自定義的熱鍵切換指南頁面"
     ],
     "leveltracker hotkeys": [
-      "输入一个键名并按 <enter>",
-      "不要将其绑定到修饰键或用于聊天的键"
+      "輸入一個鍵名並按 <enter>",
+      "不要將其綁定到修飾鍵或用於聊天的鍵"
     ],
     "lootfilter enable": [
-      "提供一个界面来修改您的战利品过滤器并即时应用更改",
-      "shift-omni-click 物品以访问它"
+      "提供一個界面來修改您的戰利品過濾器並即時應用更改",
+      "shift-omni-click 物品以訪問它"
     ],
     "maptracker enable": [
-      "提供自动跟踪您的地图运行，以及一个带有导出工具的日志查看器",
-      "跟踪地图时间、死亡、传送门、战利品、击杀和某些类型的侧内容"
+      "提供自動跟踪您的地圖運行，以及一個帶有導出工具的日誌查看器",
+      "跟踪地圖時間、死亡、傳送門、戰利品、擊殺和某些類型的側內容"
     ],
     "maptracker rename": [
-      "为更容易搜索而标记和重命名boss地图",
-      "示例:\n<boss: elder> 而不是 <缺乏价值和意义>"
+      "為更容易搜索而標記和重命名boss地圖",
+      "示例:\n<boss: elder> 而不是 <缺乏價值和意義>"
     ],
     "maptracker rename 2": [
-      "为更容易搜索而标记和重命名boss地图",
-      "示例:\n<boss: xesht> 而不是 <扭曲领域 (boss)>"
+      "為更容易搜索而標記和重命名boss地圖",
+      "示例:\n<boss: xesht> 而不是 <扭曲領域 (boss)>"
     ],
     "maptracker character": [
-      "您的角色名称、职业和等级将被记录",
-      "可选: 构建的名称/描述也可以被记录",
-      "您必须在 <general> 设置中的 <general> 部分指定此信息"
+      "您的角色名稱、職業和等級將被記錄",
+      "可選: 構建的名稱/描述也可以被記錄",
+      "您必須在 <general> 設置中的 <general> 部分指定此信息"
     ],
     "maptracker side-content": [
-      "您进入的侧区域和花费的时间将被记录",
-      "示例: 深渊、帝王试炼、瓦尔区域、星陨坑"
+      "您進入的側區域和花費的時間將被記錄",
+      "示例: 深淵、帝王試煉、瓦爾區域、星隕坑"
     ],
     "maptracker hide": [
-      "每当跟踪暂停时隐藏面板(通过右键点击工具栏中的按钮)",
-      "检查工具栏按钮以查看跟踪器的状态(它也会在暂停时变灰)"
+      "每當跟踪暫停時隱藏面板 (通過右鍵點擊工具欄中的按鈕)",
+      "檢查工具欄按鈕以查看跟踪器的状态(它也會在暫停時變灰)"
     ],
     "maptracker mechanics": [
-      "记录您在地图上遇到的某些机制"
+      "記錄您在地图上遇到的某些機制"
     ],
     "maptracker dialogue tracking": [
-      "这些机制可以通过游戏内对话自动跟踪",
-      "需要启用游戏 <ui> 设置中的 <output dialogue to chat> (/highlight)"
+      "這些機制可以通過遊戲內對話自動跟踪",
+      "需要啟用遊戲 <ui> 設置中的 <output dialogue to chat> (/highlight)"
     ],
     "maptracker screen tracking": [
-      "这些机制将通过搜索屏幕上的特定 ui 元素来跟踪",
-      "每当您按住 <tab> 时，屏幕将被检查",
-      "需要手动校准"
+      "這些機制將通過搜索屏幕上的特定 ui 元素來跟踪",
+      "每當您按住 <tab> 時，屏幕将被检查",
+      "需要手動校准"
     ],
     "maptracker dialoguemechanic": [
-      "机制可以单独切换"
+      "機制可以單獨切換"
     ],
     "maptracker screenmechanic": [
-      "机制可以单独切换",
-      "红色高亮指示缺少校准",
-      "右键点击打开截图工具并截图一个独特的 ui 元素"
+      "機制可以單獨切換",
+      "紅色高亮指示缺少校准",
+      "右鍵點擊打開截圖工具並截圖一個獨特的 ui 元素"
     ],
     "maptracker portal reminder": [
-      "当使用传送门卷轴时，一个工具提示将提醒您检查地图内容是否已完成",
-      "需要您指定正确的游戏内热键"
+      "當使用傳送門卷軸時，一個工具提示將提醒您檢查地圖內容是否已完成",
+      "需要您指定正確的遊戲內熱鍵"
     ],
     "maptracker portal hotkey": [
-      "输入游戏内热键 <use portal scroll> 的键名",
-      "检查上面的链接，如果它使用特殊键/组合"
+      "輸入遊戲內熱鍵 <use portal scroll> 的鍵名",
+      "檢查上面的鏈接，如果它使用特殊鍵/組合"
     ],
     "maptracker loot-tracker": [
-      "您 ctrl-点击的物品将被记录",
-      "ctrl-右键点击将一个一个地删除先前添加的物品(类似于文本编辑中的 ctrl-z)",
-      "需要正确设置 <stash> 图像检查，在 <screen-checks> 菜单中(/highlight)"
+      "您 ctrl-点击的物品將被記錄",
+      "ctrl-右鍵點擊將一個一個地刪除先前添加的物品(類似於文本編輯中的 ctrl-z)",
+      "需要正確設置 <stash> 圖像檢查，在 <screen-checks> 菜單中(/highlight)"
     ],
     "maptracker kill-tracker": [
-      "完成地图上的怪物击杀将被记录",
-      "离开地图会导致跟踪器面板闪烁，直到您点击计时器刷新击杀",
-      "刷新击杀只需要在您完成地图并不会返回时进行"
+      "完成地圖上的怪物擊殺將被記錄",
+      "離開地圖會導致跟踪器面板閃爍，直到您點擊計時器刷新擊殺",
+      "刷新擊殺只需要在您完成地圖並不會返回時進行"
     ],
     "maptracker mapinfo": [
-      "地图信息面板中的地图mods将被记录\n(单独的功能，必须启用和使用)",
-      "这还包括信息，如:\nelder guardians, conquerors, type of maven invitation, blight(-ravaged), contract/blueprint"
+      "地圖信息面板中的地圖mods將被記錄\n(單獨的功能，必須啟用和使用)",
+      "這還包括信息，如:\nelder guardians, conquerors, type of maven invitation, blight(-ravaged), contract/blueprint"
     ],
     "maptracker notes": [
-      "添加一个图标到跟踪器面板以记录个人地图运行的自定义笔记",
-      "还允许您轻松单击记录物品，例如地图设备物品使用、运行中发现的特殊掉落等"
+      "添加一個圖標到跟踪器面板以記錄個人地圖運行的自定義筆記",
+      "還允許您輕鬆單擊記錄物品，例如地圖設備物品使用、運行中發現的特殊掉落等"
     ],
     "maptracker color unselected": [
-      "用于日志查看器中的突出显示单元格，以及日期选择中的非联盟日期",
-      "点击打开颜色调色板，右键点击重置为默认"
+      "用於日誌查看器中的突出顯示單元格，以及日期選擇中的非聯盟日期",
+      "點擊打開顏色調色板，右鍵點擊重置為默認"
     ],
     "maptracker color selected": [
-      "用于当前选定的年份及其月份的日期选择",
-      "点击打开颜色调色板，右键点击重置为默认"
+      "用於當前選定的年份及其月份的日期選擇",
+      "點擊打開顏色調色板，右鍵點擊重置為默認"
     ],
     "maptracker color leagues": [
-      "用于突出显示特定联盟的日期",
-      "点击打开颜色调色板，右键点击重置为默认"
+      "用於突出顯示特定聯盟的日期",
+      "點擊打開顏色調色板，右鍵點擊重置為默認"
     ],
     "mapinfo enable": [
-      "提供一个紧凑且可定制的地图mods信息面板",
-      "omni-clicking a map opens the panel:\n- press 1-4 while hovering mods to apply colors\n- press <space> while hovering mods to ignore\n- right-click mods to reset them",
-      "需要正确设置 <inventory> 像素检查，在 <screen-checks> 设置中(/highlight)"
+      "提供一個緊湊且可定制的地圖mods信息面板",
+      "在地圖上點擊 <omni-key> 打開面板:\n- 懸停mods並按1-4應用顏色\n- 懸停mods並按<space>忽略\n- 右鍵點擊mods重置它們",
+      "需要正確設置 <inventory> 像素檢查，在 <screen-checks> 設置中(/highlight)"
     ],
     "mapinfo <omni-key>": [
-      "press the <omni-key> while hovering over maps/waystones to activate the panel",
+      "懸停地圖/傳送門時按下 <omni-key> 以激活面板",
       "点击进入游戏或按 <esc> 关闭"
     ],
     "mapinfo alt-key": [
@@ -683,80 +682,80 @@
       "输入地图mods (游戏内术语) 并按 <enter> 列出它们"
     ],
     "mapinfo roll highlight": [
-      "map rolls (quant, rarity, etc.) will be highlighted if they meet certain requirements地图roll (数量、稀有度等) 如果它们满足某些要求，将被突出显示"
+      "地图roll (数量、稀有度等) 如果它们满足某些要求，将被突出显示"
     ],
     "mapinfo roll colors": [
-      "这是当前突出显示设置的预览",
-      "点击右侧的彩色按钮打开调色板，右键点击重置颜色为默认",
-      "第一个按钮: 文本颜色\n第二个按钮: 背景颜色"
+      "這是當前突出顯示設置的預覽",
+      "點擊右側的彩色按鈕打開調色板，右鍵點擊重置顏色為默認",
+      "第一個按鈕: 文本顏色\n第二個按鈕: 背景顏色"
     ],
     "mapinfo requirements": [
-      "指定每个roll所需的/期望的最小值",
-      "数量、稀有度、包大小、地图、虫洞、货币"
+      "指定每個roll所需的/期望的最小值",
+      "數量、稀有度、包大小、地圖、蟲洞、貨幣"
     ],
     "mapinfo mod settings": [
-      "下面，您可以自定义特定地图mods的等级",
-      "悬停mods并按数字键1-4应用突出显示，按空格键划掉它们，或右键点击重置为未分级(白色)",
-      "使用mod搜索找到mods，点击–和+按钮(un)pin mods以快速访问"
+      "下面，您可以自定義特定地圖mods的等級",
+      "懸停mods並按數字鍵1-4應用突出顯示，按空格鍵劃掉它們，或右鍵點擊重置為未分級(白色)",
+      "使用mod搜索找到mods，點擊–和+按鈕(un)pin mods以快速訪問"
     ],
     "mapinfo reset tiers": [
-      "长按重置每个地图mod等级为默认(白色，未划掉)",
-      "(/highlight)这影响每个mod，不只是下面的固定mod"
+      "長按重置每個地圖mod等級為默認(白色，未劃掉)",
+      "(/highlight)這影響每個mod，不只是下面的固定mod"
     ],
     "alarm enable": [
-      "计时器小部件，带有警报/倒计时和秒表功能",
-      "默认隐藏，按住 <tab> 在游戏中显示"
+      "計時器小部件，帶有警報/倒計時和秒錶功能",
+      "默認隱藏，按住 <tab> 在遊戲中顯示"
     ],
     "map-events enable": [
-      "每当某些地图事件生成时显示通知",
-      "示例: 无名预言家、反射雾、臭名昭著的雇佣兵"
+      "每當某些地圖事件生成時顯示通知",
+      "示例: 無名預言家、反射霧、臭名昭著的雇佣兵"
     ],
     "map-events position": [
-      "通知将停靠在客户端的一个边缘"
+      "通知將停靠在客戶端的一個邊緣"
     ],
     "map-events test": [
-      "点击激活一个测试通知"
+      "點擊激活一個測試通知"
     ],
     "notepad enable": [
-      "记事本工具，带有单独的标签和浮动小部件，可用于便签",
-      "添加一个按钮到主工具栏: 点击它切换记事本，右键点击它创建一个一次性便签"
+      "記事本工具，帶有單獨的標籤和浮動小部件，可用于便签",
+      "添加一個按鈕到主工具欄: 點擊它切換記事本，右鍵點擊它創建一個一次性便签"
     ],
     "notepad default color": [
-      "指定新标签的小部件的默认颜色",
-      "这些可以稍后为每个标签自定义"
+      "指定新標籤的小部件的默認顏色",
+      "這些可以稍後為每個標籤自定義"
     ],
     "notepad opacity": [
-      "不活动小部件的透明度(<tab> 未按下时)",
-      "0 = 不活动小部件隐藏"
+      "不活動小部件的透明度(<tab> 未按下時)",
+      "0 = 不活動小部件隱藏"
     ],
     "lab enable": [
       "simple lab layout overlay and tracker for casual runs",
       "activated by holding <tab> in lab or the aspirants' plaza"
     ],
     "ocr enable": [
-      "屏幕阅读功能，扫描屏幕并显示可定制且紧凑的工具提示中的某些信息/文本",
+      "屏幕閱讀功能，掃描屏幕並顯示可定製且緊湊的工具提示中的某些信息/文本",
       "currently supported: eldritch altars, vaal side areas"
     ],
     "ocr compatibility": [
-      "屏幕阅读功能，扫描屏幕并显示可定制且紧凑的工具提示中的某些信息/文本",
-      "在启用此功能之前，必须进行兼容性测试",
-      "打开角色统计屏幕，然后点击此复选框打开windows截图工具",
-      "使用它从角色统计中截取4到5行文本"
+      "屏幕閱讀功能，掃描屏幕並顯示可定製且緊湊的工具提示中的某些信息/文本",
+      "在啓用此功能之前，必須進行兼容性測試",
+      "打開角色統計屏幕，然後點擊此複選框打開windows截圖工具",
+      "使用它從角色統計中截取4到5行文本"
     ],
     "ocr colors": [
-      "自定义用于突出显示特定mods/奖励的颜色模式"
+      "自定義用於突出顯示特定mods/獎勵的顏色模式"
     ],
     "ocr debug": [
-      "按住右ctrl扫描屏幕将打开一个窗口，显示屏幕截图以及脚本能够从中读取的文本"
+      "按住右ctrl掃描屏幕將打開一個窗口，顯示屏幕截圖以及腳本能夠從中讀取的文本"
     ],
     "ocr z hotkey": [
-      "输入游戏内热键 <toggle highlighting> 的键名",
-      "检查上面的链接，如果它使用特殊键/组合"
+      "輸入遊戲內熱鍵 <toggle highlighting> 的鍵名",
+      "檢查上面的鏈接，如果它使用特殊鍵/組合"
     ],
     "ocr hotkey": [
-      "输入您想要使用的热键来激活此功能",
-      "不要将其绑定到修饰键或用于聊天的键，以防止意外激活功能",
-      "检查上面的链接，如果您想要使用特殊键/组合"
+      "輸入您想要使用的热键来激活此功能",
+      "不要將其綁定到修飾鍵或用於聊天的鍵，以防止意外激活功能",
+      "檢查上面的鏈接，如果您想要使用特殊鍵/組合"
     ],
     "sanctum enable": [
       "analyzes rooms and connections on the map and provides tools for highlighting and planning",
@@ -772,96 +771,96 @@
       "requires the <inventory> pixel-check to be set up correctly in the <screen-checks> settings(/highlight)"
     ],
     "screenchecks pixel-about": [
-      "脚本不断检查屏幕上的某些 ui 元素",
-      "这启用了上下文敏感性和自动覆盖切换",
-      "这些检查永远不会与客户端进行任何交互"
+      "腳本不斷檢查屏幕上的某些 ui 元素",
+      "這啟用了上下文敏感性和自動覆蓋切換",
+      "這些檢查永遠不會與客戶端進行任何交互"
     ],
     "screenchecks pixel-calibration": [
-      "在点击此按钮之前，请遵循 <信息> 中的说明",
-      "捕获某些像素值并存储以供将来检查"
+      "在點擊此按鈕之前，請遵循 <信息> 中的說明",
+      "捕獲某些像素值並存儲以供將來檢查"
     ],
     "screenchecks pixel-test": [
-      "当 <信息> 中显示的 ui 元素可见时，点击此按钮，测试应返回存在",
-      "当 <信息> 中显示的 ui 元素不可见时，再次点击它，测试应返回不存在",
-      "geforce now: 移动您的角色，然后重新执行步骤 1 和 2"
+      "當 <信息> 中顯示的 ui 元素可見時，點擊此按鈕，測試應返回存在",
+      "當 <信息> 中顯示的 ui 元素不可見時，再次點擊它，測試應返回不存在",
+      "geforce now: 移動您的角色，然後重新執行步驟 1 和 2"
     ],
     "screenchecks pixel-info": [
-      "长按以查看说明"
+      "長按以查看說明"
     ],
     "screenchecks pixel-background": [
-      "重要的后台进程，启用上下文敏感性",
-      "如果出现性能问题，暂时禁用以检查是否是原因"
+      "重要的後台進程，啟用上下文敏感性",
+      "如果出現性能問題，暫時禁用以檢查是否是原因"
     ],
     "screenchecks image-about": [
-      "与像素检查（见上文）相同的原则，但更精确",
-      "这些用于解释按下 <omni-key> 或 <tab> 时激活哪个功能"
+      "與像素檢查（見上文）相同原則，但更精確",
+      "這些用於解釋按下 <omni-key> 或 <tab> 時激活哪個功能"
     ],
     "screenchecks image-info": [
-      "长按以查看说明"
+      "長按以查看說明"
     ],
     "screenchecks image-calibration": [
-      "在点击此按钮之前，请遵循 <信息> 中的说明",
-      "左键: 自动校准",
-      "右键: 手动截取 <信息> 中显示的 ui 元素"
+      "在點擊此按鈕之前，請遵循 <信息> 中的說明",
+      "左鍵: 自動校準",
+      "右鍵: 手動截取 <信息> 中顯示的 ui 元素"
     ],
     "screenchecks image-test": [
-      "当 <信息> 中显示的 ui 元素可见时，点击此按钮，测试应返回存在",
-      "当 <信息> 中显示的 ui 元素不可见时，再次点击它，测试应返回不存在",
-      "如果测试在自动校准后继续返回负数，右键点击 <校準> 按钮并截取 <信息> 中标记的区域"
+      "當 <信息> 中顯示的 ui 元素可見時，點擊此按鈕，測試應返回存在",
+      "當 <信息> 中顯示的 ui 元素不可見時，再次點擊它，測試應返回不存在",
+      "如果測試在自動校準後繼續返回不存在，右鍵點擊 <校準> 按鈕並截取 <信息> 中標記的區域"
     ],
     "screenchecks folder": [
-      "打开包含校准文件的文件夹",
-      "如果测试继续失败，打开 img-files 以检查它们是否代表正确的图像剪辑"
+      "打開包含校準文件的文件夾",
+      "如果測試繼續失敗，打開 img-files 以檢查它們是否代表正確的圖像剪輯"
     ],
     "screenchecks variance": [
-      "由于流式客户端具有可变图像质量，工具可能无法准确检查屏幕上的某些 ui 元素",
-      "如果点击 <測試> 不返回一致、可重复的结果，您可能需要增加屏幕检查的允许变量",
-      "增加 10 的值并重新测试检查，直到结果一致"
+      "由於流式客戶端具有可變圖像質量，工具可能無法準確檢查屏幕上的某些 ui 元素",
+      "如果點擊 <測試> 不返回一致、可重複的結果，您可能需要增加屏幕檢查的允許變量",
+      "增加 10 的值並重新測試檢查，直到結果一致"
     ],
     "searchstrings poe-regex": [
-      "第三方网站以用于正则表达式字符串"
+      "第三方網站以用於正則表達式字符串"
     ],
     "searchstrings about": [
-      "搜索字符串分为用例，例如: gwennen, harvest, vendor",
-      "当按下 <omni-key> 时，脚本检测正确的用例并显示一个列表以选择",
-      "检测需要手动图像校准",
-      "某些用例不会隐藏在右上角的联盟信息面板，因此您必须在按下<omni-key>之前打开背包"
+      "搜索字符串分為用例，例如: gwennen, harvest, vendor",
+      "當按下 <omni-key> 時，腳本檢測正確的用例並顯示一個列表以選擇",
+      "檢測需要手動圖像校準",
+      "某些用例不會隱藏在右上角的聯盟信息面板，因此您必須在按下<omni-key>之前打開背包"
     ],
     "searchstrings about 2": [
-      "搜索字符串分为用例，例如: gem cutting, stash, vendor",
-      "当按下 <omni-key> 时，脚本检测正确的用例并显示一个列表以选择",
-      "检测需要手动图像校准"
+      "搜索字符串分為用例，例如: gem cutting, stash, vendor",
+      "當按下 <omni-key> 時，腳本檢測正確的用例並顯示一個列表以選擇",
+      "檢測需要手動圖像校準"
     ],
     "searchstrings calibrate": [
-      "打开剪辑工具: 使用它剪辑一个独特的ui元素"
+      "打開剪輯工具: 使用它剪輯一個獨特的ui元素"
     ],
     "searchstrings test": [
-      "点击此按钮时，ui元素在屏幕上，测试应返回存在",
-      "点击此按钮时，ui元素不在屏幕上，测试应返回不存在",
-      "结果必须一致且可重复"
+      "點擊此按鈕時，ui元素在屏幕上，測試應返回存在",
+      "點擊此按鈕時，ui元素不在屏幕上，測試應返回不存在",
+      "結果必須一致且可重複"
     ],
     "searchstrings edit": [
-      "打开一个菜单，其中可以添加或编辑此用例的字符串"
+      "打開一個菜單，其中可以添加或編輯此用例的字符串"
     ],
     "searchstrings delete": [
-      "长按删除此用例及其字符串"
+      "長按刪除此用例及其字符串"
     ],
     "searchstrings copy": [
-      "输入一个名称，然后点击此按钮创建此用例的副本，并使用新名称"
+      "輸入一個名稱，然後點擊此按鈕創建此用例的副本，並使用新名稱"
     ],
     "searchstrings enable": [
-      "启用/禁用特定用例"
+      "啓用/禁用特定用例"
     ],
     "searchstrings enable-beastcrafting": [
-      "启用/禁用特定用例",
-      "这是默认包含的，包含用于药水制作的字符串"
+      "啓用/禁用特定用例",
+      "這是默認包含的，包含用於藥水制作的字符串"
     ],
     "searchstrings enable-lilly": [
-      "启用/禁用特定用例",
-      "这是导入的升级指南的一部分，包含每个宝石的字符串"
+      "啓用/禁用特定用例",
+      "這是導入的升級指南的一部分，包含每個寶石的字符串"
     ],
     "searchstrings add": [
-      "输入一个名称，然后按 <enter>"
+      "輸入一個名稱，然後按 <enter>"
     ],
     "stash color tag1": [
       "this is what price tags with poe.ninja-prices look like"

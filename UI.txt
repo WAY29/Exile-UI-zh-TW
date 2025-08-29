@@ -368,23 +368,23 @@
 ;#####################################################
 
 ;## these strings are displayed/required when using the item-info feature
-		iteminfo_unsupported		=	"item not supported"
-		iteminfo_dps			=	"dps"				;## damage per second
-		iteminfo_base			=	"base"				;## as in item-base / crafting-base
-		iteminfo_qual_scaling		=	"scaling"
-		iteminfo_ruleblock		=	"blocked by global rule"
-		iteminfo_clearfirst		=	"clear class-specific;highlighting first"
-		iteminfo_drop_tier		=	"drop"				;## refers to dropped items, e.g. "boss drop", "uber drop", "T0 drop"
-		iteminfo_drop_league		=	"league"			;## unique is limited to a specific...
-		iteminfo_drop_boss		=	"boss"
-		iteminfo_drop_limited		=	"limited"			;## either limited to div-cards or special events (e.g. oni-goroshi)
-		iteminfo_drop_uber		=	"uber"
-		iteminfo_drop_recipe		=	"recipe"			;## vendor-recipes
-		iteminfo_drop_pinnacle		=	"pinnacle"
-		iteminfo_drop_vaal		=	"vaal"				;## exclusive to corruption
-		iteminfo_drop_retired		=	"retired"			;## item is currently not obtainable
-		iteminfo_drop_unknown		=	"unknown"			;## no database-entry for this unique (e.g. new league)
-		iteminfo_drop_global		=	"global"
+		iteminfo_unsupported		=	"物品不支持"
+		iteminfo_dps			=	"每秒傷害"				;## damage per second
+		iteminfo_base			=	"基底"				;## as in item-base / crafting-base
+		iteminfo_qual_scaling		=	"變化"
+		iteminfo_ruleblock		=	"被全局規則阻擋"
+		iteminfo_clearfirst		=	"清除類別特定;高亮顯示"
+		iteminfo_drop_tier		=	"掉落"				;## refers to dropped items, e.g. "boss drop", "uber drop", "T0 drop"
+		iteminfo_drop_league		=	"聯盟"			;## unique is limited to a specific...
+		iteminfo_drop_boss		=	"BOSS"
+		iteminfo_drop_limited		=	"限制"			;## either limited to div-cards or special events (e.g. oni-goroshi)
+		iteminfo_drop_uber		=	"UBER"
+		iteminfo_drop_recipe		=	"配方"			;## vendor-recipes
+		iteminfo_drop_pinnacle		=	"火焰尖峰"
+		iteminfo_drop_vaal		=	"瓦爾"				;## exclusive to corruption
+		iteminfo_drop_retired		=	"已過時"			;## item is currently not obtainable
+		iteminfo_drop_unknown		=	"未知"			;## no database-entry for this unique (e.g. new league)
+		iteminfo_drop_global		=	"全局"
 
 
 
